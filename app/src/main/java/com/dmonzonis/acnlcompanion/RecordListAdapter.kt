@@ -22,7 +22,7 @@ class RecordListAdapter(private val records: Array<String>) :
 
     override fun onBindViewHolder(holder: RecordHolder, position: Int) {
         val recordText: String = records[position]
-        holder.itemView.exampleTextView.text = recordText
+        holder.itemView.text_name.text = recordText
     }
 
 }
