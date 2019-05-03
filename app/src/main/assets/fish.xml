@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<RecordList>
+    <Record>
+        <name>Amarguillo</name>
+        <price>900</price>
+        <time>Todo el día</time>
+        <season>Nov - Feb</season>
+    </Record>
+    <Record>
+        <name>Cacho</name>
+        <price>200</price>
+        <time>09-16</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Carpín</name>
+        <price>120</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Leucisco</name>
+        <price>200</price>
+        <time>16 - 09</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Barbo</name>
+        <price>200</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Carpa</name>
+        <price>300</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Koi</name>
+        <price>2000</price>
+        <time>16 - 09</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Pez Dorado</name>
+        <price>1300</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Pez Telescopio</name>
+        <price>1300</price>
+        <time>9 - 16</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Killi</name>
+        <price>300</price>
+        <time>Todo el día</time>
+        <season>Abr - Ago</season>
+    </Record>
+    <Record>
+        <name>Cangrejo de río</name>
+        <price>250</price>
+        <time>Todo el día</time>
+        <season>Abr - Sep</season>
+    </Record>
+    <Record>
+        <name>Tortuga Caparazón Blando</name>
+        <price>3750</price>
+        <time>16 - 9</time>
+        <season>Ago-Sep</season>
+    </Record>
+    <Record>
+        <name>Renacuajo</name>
+        <price>100</price>
+        <time>Todo el día</time>
+        <season>Mar-Jul</season>
+    </Record>
+    <Record>
+        <name>Rana</name>
+        <price>120</price>
+        <time>Todo el día</time>
+        <season>May - Ago</season>
+    </Record>
+    <Record>
+        <name>Gobio de Río</name>
+        <price>300</price>
+        <time>16 - 9</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Locha</name>
+        <price>300</price>
+        <time>Todo el día</time>
+        <season>Mar - May</season>
+    </Record>
+    <Record>
+        <name>Siluro</name>
+        <price>800</price>
+        <time>16 - 9</time>
+        <season>May - Oct</season>
+    </Record>
+    <Record>
+        <name>Anguila</name>
+        <price>2000</price>
+        <time>16 - 9</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Cabeza de Serpiente</name>
+        <price>5500</price>
+        <time>9 - 16</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Pez Sol</name>
+        <price>120</price>
+        <time>9 - 16</time>
+        <season>Mar-Nov</season>
+    </Record>
+    <Record>
+        <name>Perca Amarilla</name>
+        <price>B</price>
+        <time>Todo el día</time>
+        <season>Oct - Mar</season>
+    </Record>
+    <Record>
+        <name>Perca</name>
+        <price>300</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Lucio</name>
+        <price>1800</price>
+        <time>Todo el día</time>
+        <season>Sep - Dic</season>
+    </Record>
+    <Record>
+        <name>Eperlano</name>
+        <price>300</price>
+        <time>Todo el día</time>
+        <season>Dic - Feb</season>
+    </Record>
+    <Record>
+        <name>Ayu</name>
+        <price>900</price>
+        <time>Todo el día</time>
+        <season>Jul - Sep</season>
+    </Record>
+    <Record>
+        <name>Salmón Japonés</name>
+        <price>1000</price>
+        <time>4 - 9 y 16 - 21</time>
+        <season>Mar - Jun y Sep - Nov</season>
+    </Record>
+    <Record>
+        <name>Trucha</name>
+        <price>3800</price>
+        <time>4 - 9 y 16 - 21</time>
+        <season>Mar - Jun1 y Sep - Nov2</season>
+    </Record>
+    <Record>
+        <name>Trucha Arcoiris</name>
+        <price>800</price>
+        <time>4 - 9 y 16 - 21</time>
+        <season>Mar - Jun y Sep - Nov</season>
+    </Record>
+    <Record>
+        <name>Taimén</name>
+        <price>15000</price>
+        <time>16 - 09</time>
+        <season>Dic - Feb</season>
+    </Record>
+    <Record>
+        <name>Salmón</name>
+        <price>700</price>
+        <time>Todo el día</time>
+        <season>Septiembre</season>
+    </Record>
+    <Record>
+        <name>Salmón real</name>
+        <price>1800</price>
+        <time>Todo el día</time>
+        <season>Septiembre</season>
+    </Record>
+    <Record>
+        <name>Cangrejo de Sanghái</name>
+        <price>2000</price>
+        <time>16 - 9</time>
+        <season>Sep - Nov</season>
+    </Record>
+    <Record>
+        <name>Gupi</name>
+        <price>1300</price>
+        <time>9 - 16</time>
+        <season>Abr - Nov</season>
+    </Record>
+    <Record>
+        <name>Pez doctor</name>
+        <price>1500</price>
+        <time>9 - -16</time>
+        <season>May - Sep</season>
+    </Record>
+    <Record>
+        <name>Pez Ángel</name>
+        <price>3000</price>
+        <time>16 - 09</time>
+        <season>May - Oct</season>
+    </Record>
+    <Record>
+        <name>Tetra Neón</name>
+        <price>500</price>
+        <time>9 - 16</time>
+        <season>Abr - Oct</season>
+    </Record>
+    <Record>
+        <name>Piraña</name>
+        <price>2500</price>
+        <time>9 - 04</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Arowana</name>
+        <price>10000</price>
+        <time>16 - 09</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Dorado</name>
+        <price>15000</price>
+        <time>4 - 21</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Pez Caimán</name>
+        <price>6000</price>
+        <time>16 - 09</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Pirarucú</name>
+        <price>10000</price>
+        <time>16 - 09</time>
+        <season>Jul - Sep</season>
+    </Record>
+    <Record>
+        <name>Bichir Ensillado</name>
+        <price>4000</price>
+        <time>21 - 4</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Mariposa Marina</name>
+        <price>1000</price>
+        <time>Todo el día</time>
+        <season>Dic - Feb</season>
+    </Record>
+    <Record>
+        <name>Caballito de Mar</name>
+        <price>1100</price>
+        <time>Todo el día</time>
+        <season>Abr - Nov</season>
+    </Record>
+    <Record>
+        <name>Pez Payaso</name>
+        <price>650</price>
+        <time>Todo el día</time>
+        <season>Abr - Sepl</season>
+    </Record>
+    <Record>
+        <name>Pez Cirujano</name>
+        <price>1000</price>
+        <time>Todo el día</time>
+        <season>Abr - Sep</season>
+    </Record>
+    <Record>
+        <name>Pez Mariposa</name>
+        <price>1000</price>
+        <time>Todo el día</time>
+        <season>Abr - Sep</season>
+    </Record>
+    <Record>
+        <name>Pez Napoleón</name>
+        <price>10000</price>
+        <time>4 - 21</time>
+        <season>Jul - Ago</season>
+    </Record>
+    <Record>
+        <name>Pez León</name>
+        <price>400</price>
+        <time>Todo el día</time>
+        <season>Abr - Nov</season>
+    </Record>
+    <Record>
+        <name>Pez Globo</name>
+        <price>240</price>
+        <time>21 - 4</time>
+        <season>Nov - Feb</season>
+    </Record>
+    <Record>
+        <name>Pez Erizo</name>
+        <price>240</price>
+        <time>Todo el día</time>
+        <season>Jul - Sep</season>
+    </Record>
+    <Record>
+        <name>Jurel</name>
+        <price>150</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Dorada Japonesa</name>
+        <price>5000</price>
+        <time>Todo el día</time>
+        <season>Mar - Nov</season>
+    </Record>
+    <Record>
+        <name>Lubina</name>
+        <price>160</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Pargo Rojo</name>
+        <price>3000</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Gallo</name>
+        <price>300</price>
+        <time>Todo el día</time>
+        <season>Oct - Abr</season>
+    </Record>
+    <Record>
+        <name>Rodaballo</name>
+        <price>800</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Calamar</name>
+        <price>400</price>
+        <time>Todo el día</time>
+        <season>Dic - Ago</season>
+    </Record>
+    <Record>
+        <name>Morena</name>
+        <price>2000</price>
+        <time>Todo el día</time>
+        <season>Ago - Oct</season>
+    </Record>
+    <Record>
+        <name>Anguila Listón Azul</name>
+        <price>600</price>
+        <time>Todo el día</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Pez balón</name>
+        <price>2500</price>
+        <time>16 - 09</time>
+        <season>Dic - Feb</season>
+    </Record>
+    <Record>
+        <name>Atún</name>
+        <price>7000</price>
+        <time>Todo el día</time>
+        <season>Nov - Mar</season>
+    </Record>
+    <Record>
+        <name>Pez Espada</name>
+        <price>10000</price>
+        <time>Todo el día</time>
+        <season>Jul - Sep</season>
+    </Record>
+    <Record>
+        <name>Jurel gigante</name>
+        <price>4500</price>
+        <time>Todo el dia</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Raya</name>
+        <price>3000</price>
+        <time>4-21</time>
+        <season>Ago - Nov</season>
+    </Record>
+    <Record>
+        <name>Pez Luna</name>
+        <price>4000</price>
+        <time>4 - 21</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Pez Martillo</name>
+        <price>8000</price>
+        <time>4 - 21</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Tiburón</name>
+        <price>15000</price>
+        <time>4 - 21</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Pez sierra</name>
+        <price>12000B</price>
+        <time>4 - 21</time>
+        <season>Jun - Sep</season>
+    </Record>
+    <Record>
+        <name>Tiburón Ballena</name>
+        <price>13000</price>
+        <time>Todo el dia</time>
+        <season>Todo el año</season>
+    </Record>
+    <Record>
+        <name>Pez Remo</name>
+        <price>9000</price>
+        <time>Todo el dia</time>
+        <season>Diciembre - Mayo</season>
+    </Record>
+    <Record>
+        <name>Celacanto</name>
+        <price>15000</price>
+        <time>16 - 09</time>
+        <season>Todo el año (mientras llueva o nieve)</season>
+    </Record>
+</RecordList>

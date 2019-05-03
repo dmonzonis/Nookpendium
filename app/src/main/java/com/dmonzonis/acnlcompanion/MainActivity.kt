@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import java.io.InputStream
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,10 +16,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dataSet: Array<String> = arrayOf("test1", "long word test", "t")
-
+        val inputStream: InputStream = assets.open("fish.xml")
+        val recordList: List<Record> = RecordXmlParser().parse(inputStream)
+        
         viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        viewAdapter = RecordListAdapter(dataSet)
+        viewAdapter = RecordListAdapter(recordList)
 
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = viewManager
