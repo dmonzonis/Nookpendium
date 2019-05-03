@@ -24,7 +24,6 @@
             android:id="@+id/text_season"
             android:layout_weight="0.3"/>
     <CheckBox
-            android:text=""
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/checkbox_completed"
