@@ -4,7 +4,12 @@ import android.util.Xml
 import org.xmlpull.v1.XmlPullParser
 import java.io.InputStream
 
-data class Record(val id: Int, val name: String, val price: String, val time: String, val season: String)
+data class Record(val id: String,
+                  val name: String,
+                  val price: String,
+                  val time: String,
+                  val season: String,
+                  var captured: Boolean?)
 
 class RecordXmlParser {
 
@@ -36,7 +41,7 @@ class RecordXmlParser {
 
     private fun readRecord(parser: XmlPullParser): Record {
         parser.require(XmlPullParser.START_TAG, ns, "Record")
-        var id = 0
+        var id = ""
         var name = ""
         var price = ""
         var time = ""
@@ -47,7 +52,7 @@ class RecordXmlParser {
                 continue
             }
             when (parser.name) {
-                "id" -> id = readText(parser).toInt()
+                "id" -> id = readText(parser)
                 "name" -> name = readText(parser)
                 "price" -> price = readText(parser)
                 "time" -> time = readText(parser)
@@ -55,7 +60,7 @@ class RecordXmlParser {
             }
         }
 
-        return Record(id, name, price, time, season)
+        return Record(id, name, price, time, season, null)
     }
 
     private fun readText(parser: XmlPullParser): String {

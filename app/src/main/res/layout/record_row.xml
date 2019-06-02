@@ -26,7 +26,7 @@
     <CheckBox
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/checkbox_completed"
+            android:id="@+id/checkbox_captured"
             android:layout_weight="0.1"/>
 
 </LinearLayout>
