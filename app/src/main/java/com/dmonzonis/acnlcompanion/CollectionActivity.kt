@@ -7,8 +7,7 @@ import android.support.v7.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.InputStream
 
-class MainActivity : AppCompatActivity() {
-
+class CollectionActivity : AppCompatActivity() {
     private lateinit var viewAdapter: RecordListAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val inputStream: InputStream = assets.open("fish.xml")
         val recordList: List<Record> = RecordXmlParser().parse(inputStream)
-        
+
         viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         viewAdapter = RecordListAdapter(recordList)
 
