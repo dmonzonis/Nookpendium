@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_collection.*
 import java.io.InputStream
 
 class CollectionActivity : AppCompatActivity() {
@@ -13,7 +13,7 @@ class CollectionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_collection)
 
         val inputStream: InputStream = assets.open("fish.xml")
         val recordList: List<Record> = RecordXmlParser().parse(inputStream)
