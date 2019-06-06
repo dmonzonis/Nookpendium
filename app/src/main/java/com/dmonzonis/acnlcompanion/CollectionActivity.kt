@@ -15,9 +15,14 @@ class CollectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_collection)
 
-        val inputStream: InputStream = assets.open("fish.xml")
+        // Get which collection needs to be opened from the value passed by the main menu activity
+        val filename = intent.getStringExtra("filename")
+
+        // Read the corresponding XML with the data and fill the records with it
+        val inputStream: InputStream = assets.open(filename)
         val recordList: List<Record> = RecordXmlParser().parse(inputStream)
 
+        // Set up the recycler view
         viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         viewAdapter = RecordListAdapter(recordList)
 
