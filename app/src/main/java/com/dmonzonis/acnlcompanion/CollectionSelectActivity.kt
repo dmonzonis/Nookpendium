@@ -18,7 +18,9 @@ class CollectionSelectActivity : AppCompatActivity() {
             openCollectionInstance("insects.xml")
         }
 
-        //TODO: Underwater button
+        button_underwater.setOnClickListener {
+            openCollectionInstance("underwater.xml")
+        }
     }
 
     private fun openCollectionInstance(filename: String) {
