@@ -4,7 +4,7 @@
                                              android:layout_height="match_parent">
 
     <TextView
-            android:text="Animal Crossing: New Leaf Companion"
+            android:text="@string/app_title_long"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/text_title"
@@ -19,7 +19,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textStyle="bold" android:gravity="center"/>
     <Button
-            android:text="Peces"
+            android:text="@string/fish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/button_fish"
@@ -32,7 +32,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"/>
     <Button
-            android:text="Insectos"
+            android:text="@string/insects"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/button_insects"
@@ -45,7 +45,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"/>
     <Button
-            android:text="Criaturas submarinas"
+            android:text="@string/underwater"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/button_underwater"

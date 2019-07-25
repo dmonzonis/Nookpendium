@@ -11,15 +11,15 @@ class CollectionSelectActivity : AppCompatActivity() {
         setContentView(R.layout.activity_collection_select)
 
         button_fish.setOnClickListener {
-            openCollectionInstance("fish.xml")
+            openCollectionInstance(getString(R.string.fish_file))
         }
 
         button_insects.setOnClickListener {
-            openCollectionInstance("insects.xml")
+            openCollectionInstance(getString(R.string.insects_file))
         }
 
         button_underwater.setOnClickListener {
-            openCollectionInstance("underwater.xml")
+            openCollectionInstance(getString(R.string.underwater_file))
         }
     }
 
@@ -27,7 +27,7 @@ class CollectionSelectActivity : AppCompatActivity() {
         val intent = Intent(this, CollectionActivity::class.java)
 
         // Pass the filename string to the new activity
-        intent.putExtra("filename", filename)
+        intent.putExtra(getString(R.string.filename), filename)
 
         startActivity(intent)
     }

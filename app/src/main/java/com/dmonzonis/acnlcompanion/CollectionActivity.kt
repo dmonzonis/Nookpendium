@@ -16,7 +16,7 @@ class CollectionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_collection)
 
         // Get which collection needs to be opened from the value passed by the main menu activity
-        val filename = intent.getStringExtra("filename")
+        val filename = intent.getStringExtra(getString(R.string.filename))
 
         // Read the corresponding XML with the data and fill the records with it
         val inputStream: InputStream = assets.open(filename)
