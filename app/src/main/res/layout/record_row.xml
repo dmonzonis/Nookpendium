@@ -4,12 +4,17 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
 
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/img_picture"
+            android:contentDescription="@null"/>
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/text_name"
-            android:layout_column="1"
-            android:layout_weight="0.4"/>
+            android:layout_weight="0.35"/>
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -19,7 +24,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/text_season"
-            android:layout_weight="0.3"/>
+            android:layout_weight="0.25"/>
     <CheckBox
             android:layout_width="0dp"
             android:layout_height="wrap_content"

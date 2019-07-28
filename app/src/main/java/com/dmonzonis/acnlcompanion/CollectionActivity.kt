@@ -20,7 +20,7 @@ class CollectionActivity : AppCompatActivity() {
 
         // Read the corresponding XML with the data and fill the records with it
         val inputStream: InputStream = assets.open(filename)
-        val recordList: List<Record> = RecordXmlParser().parse(inputStream)
+        val recordList: List<Record> = RecordXmlParser(this).parse(inputStream)
 
         // Set up the recycler view
         viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)

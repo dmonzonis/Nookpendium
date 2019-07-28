@@ -11,8 +11,8 @@ import kotlinx.android.synthetic.main.record_row.view.*
 class RecordListAdapter(private val records: List<Record>) :
     RecyclerView.Adapter<RecordListAdapter.RecordHolder>() {
 
-    val PREFS_FILENAME = "com.dmonzonis.acnlcompanion.prefs"
-    var prefs: SharedPreferences? = null
+    private val prefsFilename = "com.dmonzonis.acnlcompanion.sharedPrefs"
+    private var sharedPrefs: SharedPreferences? = null
 
     class RecordHolder(v: View) : RecyclerView.ViewHolder(v) {
         val checkBox: CheckBox = v.findViewById(R.id.checkbox_captured)
@@ -23,7 +23,7 @@ class RecordListAdapter(private val records: List<Record>) :
             .inflate(R.layout.record_row, parent, false)
 
         // Initialize shared preferences
-        prefs = parent.context.getSharedPreferences(PREFS_FILENAME, 0)
+        sharedPrefs = parent.context.getSharedPreferences(prefsFilename, 0)
 
         return RecordHolder(inflatedView)
     }
@@ -35,10 +35,11 @@ class RecordListAdapter(private val records: List<Record>) :
         holder.itemView.text_name.text = record.name
         holder.itemView.text_price.text = record.price
         holder.itemView.text_season.text = record.season
+        holder.itemView.img_picture.setImageResource(record.imageId)
 
         // Get captured state from shared preferences if it hasn't been loaded yet
         if (record.captured == null) {
-            record.captured = prefs?.getBoolean(record.id, false) ?: false
+            record.captured = sharedPrefs?.getBoolean(record.id, false) ?: false
         }
         holder.itemView.checkbox_captured.isChecked = record.captured!!
 
@@ -46,7 +47,7 @@ class RecordListAdapter(private val records: List<Record>) :
         holder.checkBox.setOnClickListener {
             val state = holder.checkBox.isChecked
             record.captured = state
-            val editor: SharedPreferences.Editor? = prefs?.edit()
+            val editor: SharedPreferences.Editor? = sharedPrefs?.edit()
             editor?.putBoolean(record.id, state)
             editor?.apply()
         }
