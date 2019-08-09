@@ -10,6 +10,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.1"
             android:id="@+id/img_picture"
+            android:paddingRight="6dp"
             android:contentDescription="@null"/>
     <TextView
             android:layout_width="0dp"
