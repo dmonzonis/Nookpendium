@@ -5,7 +5,7 @@
 		<name>Alga wakame</name>
 		<price>200</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Nov-Jul</season>
         <image>peces_seaweed</image>
 	</Record>
 	<Record>
@@ -13,7 +13,7 @@
 		<name>Uva de mar</name>
 		<price>600</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Jun-Sep</season>
         <image>peces_sea_grapes</image>
 	</Record>
 	<Record>
@@ -21,7 +21,7 @@
 		<name>Erizo de mar</name>
 		<price>800</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>May-Sep</season>
         <image>peces_sea_urchin</image>
 	</Record>
 	<Record>
@@ -29,7 +29,7 @@
 		<name>Bellota de mar</name>
 		<price>200</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año</season>
         <image>peces_acorn_barnacle</image>
 	</Record>
 	<Record>
@@ -37,31 +37,31 @@
 		<name>Ostra</name>
 		<price>400</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Sep-Feb</season>
         <image>peces_oyster</image>
 	</Record>
 	<Record>
 		<id>306</id>
 		<name>Caracola espinosa</name>
 		<price>300</price>
-		<time>16:00-9:00</time>
-		<season>-</season>
+		<time>16-9</time>
+		<season>Ago-May</season>
         <image>peces_turban_shell</image>
 	</Record>
 	<Record>
 		<id>307</id>
 		<name>Abulón</name>
 		<price>400</price>
-		<time>16:00-9:00</time>
-		<season>-</season>
+		<time>16-9</time>
+		<season>Todo el año</season>
         <image>peces_abalone</image>
 	</Record>
 	<Record>
 		<id>308</id>
 		<name>Oreja de mar</name>
 		<price>300</price>
-		<time>16:00-9:00</time>
-		<season>-</season>
+		<time>16-9</time>
+		<season>Todo el año</season>
         <image>peces_ear_shell</image>
 	</Record>
 	<Record>
@@ -69,7 +69,7 @@
 		<name>Almeja oriental</name>
 		<price>300</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Sep-Abr</season>
         <image>peces_clam</image>
 	</Record>
 	<Record>
@@ -77,7 +77,7 @@
 		<name>Ostra perlera</name>
 		<price>1600</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año</season>
         <image>peces_pearl_oyster</image>
 	</Record>
 	<Record>
@@ -85,7 +85,7 @@
 		<name>Vieira</name>
 		<price>1000</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año</season>
         <image>peces_scallop</image>
 	</Record>
 	<Record>
@@ -93,7 +93,7 @@
 		<name>Anémona</name>
 		<price>100</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año</season>
         <image>peces_sea_anemone</image>
 	</Record>
 	<Record>
@@ -101,7 +101,7 @@
 		<name>Estrella de mar</name>
 		<price>100</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año</season>
         <image>peces_sea_star</image>
 	</Record>
 	<Record>
@@ -109,7 +109,7 @@
 		<name>Pepino de mar</name>
 		<price>150</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Nov-Abr</season>
         <image>peces_sea_cucumber</image>
 	</Record>
 	<Record>
@@ -117,47 +117,47 @@
 		<name>Babosa de mar</name>
 		<price>200</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año</season>
         <image>peces_sea_slug</image>
 	</Record>
 	<Record>
 		<id>316</id>
 		<name>Gusano políclado</name>
 		<price>200</price>
-		<time>16:00-9:00</time>
-		<season>-</season>
+		<time>16-9</time>
+		<season>Ago-Sep</season>
         <image>peces_flatworm</image>
 	</Record>
 	<Record>
 		<id>317</id>
 		<name>Langosta mantis</name>
 		<price>1250</price>
-		<time>16:00-9:00</time>
-		<season>-</season>
+		<time>16-9</time>
+		<season>Todo el año</season>
         <image>peces_mantis_shrimp</image>
 	</Record>
 	<Record>
 		<id>318</id>
 		<name>Camarón boreal</name>
 		<price>650</price>
-		<time>16:00-9:00</time>
-		<season>-</season>
+		<time>16-9</time>
+		<season>Sep-Feb</season>
         <image>peces_sweet_shrimp</image>
 	</Record>
 	<Record>
 		<id>319</id>
 		<name>Langostino tigre</name>
 		<price>1600</price>
-		<time>16:00-9:00</time>
-		<season>-</season>
+		<time>16-9</time>
+		<season>Jun-Sep</season>
         <image>peces_tiger_prawn</image>
 	</Record>
 	<Record>
 		<id>320</id>
 		<name>Langosta espinosa</name>
 		<price>3000</price>
-		<time>21:00-4:00</time>
-		<season>-</season>
+		<time>21-4</time>
+		<season>Sep-Dic</season>
         <image>peces_spiny_lobster</image>
 	</Record>
 	<Record>
@@ -165,7 +165,7 @@
 		<name>Bogavante</name>
 		<price>2500</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año</season>
         <image>peces_lobster</image>
 	</Record>
 	<Record>
@@ -173,7 +173,7 @@
 		<name>Cangrejo de nieve</name>
 		<price>4000</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Nov-Abr</season>
         <image>peces_snow_crab</image>
 	</Record>
 	<Record>
@@ -181,7 +181,7 @@
 		<name>Cangrejo peludo</name>
 		<price>4000</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Nov-Abr</season>
         <image>peces_horsehair_crab</image>
 	</Record>
 	<Record>
@@ -189,7 +189,7 @@
 		<name>Cangrejo boreal</name>
 		<price>6000</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Nov-Mar</season>
         <image>peces_red_king_crab</image>
 	</Record>
 	<Record>
@@ -197,7 +197,7 @@
 		<name>Cangrejo gig. Jap.</name>
 		<price>10000</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Mar-Abr</season>
         <image>peces_spider_crab</image>
 	</Record>
 	<Record>
@@ -205,7 +205,7 @@
 		<name>Pulpo</name>
 		<price>1200</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Mar-Jul y Sep-Ene</season>
         <image>peces_octopus</image>
 	</Record>
 	<Record>
@@ -213,7 +213,7 @@
 		<name>Anguila jardinera</name>
 		<price>600</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año (Isla)</season>
         <image>peces_spotted_garden_eel</image>
 	</Record>
 	<Record>
@@ -221,15 +221,15 @@
 		<name>Nautilo</name>
 		<price>900</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año (Isla)</season>
         <image>peces_chambered_nautilus</image>
 	</Record>
 	<Record>
 		<id>329</id>
 		<name>Cangrejo herradura</name>
 		<price>1500</price>
-		<time>21:00-4:00</time>
-		<season>-</season>
+		<time>21-4</time>
+		<season>Jul-Sep</season>
         <image>peces_horseshoe_crab</image>
 	</Record>
 	<Record>
@@ -237,7 +237,7 @@
 		<name>Isópodo gigante</name>
 		<price>9000</price>
 		<time>Todo el día</time>
-		<season>-</season>
+		<season>Todo el año (Isla)</season>
         <image>peces_giant_isopod</image>
 	</Record>
 </RecordList>
