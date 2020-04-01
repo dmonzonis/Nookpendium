@@ -5,10 +5,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CollectionActivity" android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/firstTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fish" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/secondTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insects" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/thirdTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/underwater" />
+    </android.support.design.widget.TabLayout>
+
     <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical"
-    />
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
