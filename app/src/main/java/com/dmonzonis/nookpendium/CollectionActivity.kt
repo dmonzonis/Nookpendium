@@ -1,9 +1,10 @@
-package com.dmonzonis.acnlcompanion
+package com.dmonzonis.nookpendium
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import com.dmonzonis.nookpendium.RecordListAdapter
 import kotlinx.android.synthetic.main.activity_collection.*
 import java.io.InputStream
 

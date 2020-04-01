@@ -1,8 +1,9 @@
-package com.dmonzonis.acnlcompanion
+package com.dmonzonis.nookpendium
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.dmonzonis.nookpendium.CollectionActivity
 import kotlinx.android.synthetic.main.activity_collection_select.*
 
 class CollectionSelectActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.dmonzonis.acnlcompanion
+package com.dmonzonis.nookpendium
 
 import android.content.SharedPreferences
 import android.support.v7.widget.RecyclerView
@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.record_row.view.*
 class RecordListAdapter(private val records: List<Record>) :
     RecyclerView.Adapter<RecordListAdapter.RecordHolder>() {
 
-    private val prefsFilename = "com.dmonzonis.acnlcompanion.sharedPrefs"
+    private val prefsFilename = "com.dmonzonis.nookpedium.sharedPrefs"
     private var sharedPrefs: SharedPreferences? = null
 
     class RecordHolder(v: View) : RecyclerView.ViewHolder(v) {

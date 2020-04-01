@@ -1,4 +1,4 @@
-package com.dmonzonis.acnlcompanion
+package com.dmonzonis.nookpendium
 
 import android.content.Context
 import android.util.Xml

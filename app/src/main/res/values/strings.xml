@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">ACNL Companion</string>
+    <string name="app_name">Nookpendium</string>
     <string name="fish_file">fish.xml</string>
     <string name="insects_file">insects.xml</string>
     <string name="underwater_file">underwater.xml</string>
     <string name="filename">filename</string>
-    <string name="app_title_long">Animal Crossing: New Leaf Companion</string>
+    <string name="app_title_long">Nookpendium</string>
     <string name="fish">Peces</string>
     <string name="insects">Insectos</string>
     <string name="underwater">Criaturas submarinas</string>
