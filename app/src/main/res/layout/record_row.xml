@@ -22,11 +22,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/text_price"
             android:layout_weight="0.2"/>
-    <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/text_season"
-            android:layout_weight="0.25"/>
     <CheckBox
             android:layout_width="0dp"
             android:layout_height="wrap_content"

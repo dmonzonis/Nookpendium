@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Nookpendium</string>
-    <string name="fish_file">fish.xml</string>
-    <string name="insects_file">insects.xml</string>
+    <string name="fish_file">fish_nh.xml</string>
+    <string name="bugs_file">bugs_nh.xml</string>
     <string name="underwater_file">underwater.xml</string>
     <string name="filename">filename</string>
     <string name="app_title_long">Nookpendium</string>
     <string name="fish">Fish</string>
-    <string name="insects">Bugs</string>
+    <string name="bugs">Bugs</string>
     <string name="underwater">Deep-sea creatures</string>
 </resources>
