@@ -5,7 +5,6 @@ import android.support.design.widget.TabLayout
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import com.dmonzonis.nookpendium.RecordListAdapter
 import kotlinx.android.synthetic.main.activity_collection.*
 import java.io.InputStream
 
@@ -19,7 +18,7 @@ class CollectionActivity : AppCompatActivity() {
 
         // Get which collection needs to be opened from the value passed by the main menu activity
         // TODO: get the selected tab
-        val filename = "fish.xml"
+        val filename = getString(R.string.fish_file)
 
         // Read the corresponding XML with the data and fill the records with it
         val inputStream: InputStream = assets.open(filename)
@@ -42,10 +41,10 @@ class CollectionActivity : AppCompatActivity() {
             }
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                val tabName = tab?.text.toString()
-                val filename = when (tabName) {
+                // TODO: Depending on hemisphere (set in settings), get the NH or SH xml file for ACNH
+                val filename = when (tab?.text.toString()) {
                     getString(R.string.fish) -> getString(R.string.fish_file)
-                    getString(R.string.insects) -> getString(R.string.insects_file)
+                    getString(R.string.bugs) -> getString(R.string.bugs_file)
                     else -> getString(R.string.underwater_file)
                 }
                 val inputStream: InputStream = assets.open(filename)
