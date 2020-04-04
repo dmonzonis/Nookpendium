@@ -36,7 +36,6 @@ class RecordListAdapter(private val records: List<Record>) :
         holder.itemView.text_price.text = record.price
         holder.itemView.img_picture.setImageResource(record.imageId)
 
-
         // Get captured state from shared preferences if it hasn't been loaded yet
         if (record.captured == null) {
             record.captured = sharedPrefs?.getBoolean(record.id, false) ?: false

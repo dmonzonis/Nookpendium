@@ -8,13 +8,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_collection.*
+import kotlinx.android.synthetic.main.filter_fab_submenu.*
 import java.io.InputStream
+import java.util.*
 
 class CollectionActivity : AppCompatActivity() {
     private lateinit var viewAdapter: RecordListAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
     lateinit var drawerToggle: ActionBarDrawerToggle
     private var selectedGame: Int = R.string.game_acnh
+    lateinit var recordset: Recordset
+    private var isFilterSubmenuOpen = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,6 +61,42 @@ class CollectionActivity : AppCompatActivity() {
                 loadGameAssets(tab)
             }
         })
+
+        fabFilters.setOnClickListener { toggleFilterSubmenuVisibility() }
+        setFilterButtonsEnabled(false)
+        fabFilterThisMonth.setOnClickListener { filterByThisMonth() }
+        fabFilterClear.setOnClickListener { updateRecyclerView(recordset.records) }
+    }
+
+    private fun updateRecyclerView(records: List<Record>) {
+        viewAdapter = RecordListAdapter(records)
+        recyclerView.adapter = viewAdapter
+    }
+
+    private fun setFilterButtonsEnabled(enabled: Boolean) {
+        fabFilterThisMonth.isEnabled = enabled
+        fabFilterClear.isEnabled = enabled
+    }
+
+    private fun toggleFilterSubmenuVisibility() {
+        if (isFilterSubmenuOpen) {
+            layoutFilterThisMonth.animate().alpha(0.0f)
+            layoutFilterClear.animate().alpha(0.0f)
+            setFilterButtonsEnabled(false)
+            fabFilters.setImageResource(R.drawable.ic_search_black_24dp)
+        } else {
+            layoutFilterThisMonth.animate().alpha(1.0f)
+            layoutFilterClear.animate().alpha(1.0f)
+            setFilterButtonsEnabled(true)
+            fabFilters.setImageResource(R.drawable.ic_clear_black_24dp)
+        }
+        isFilterSubmenuOpen = !isFilterSubmenuOpen
+    }
+
+    private fun filterByThisMonth() {
+        val currentMonth = Calendar.getInstance().get(Calendar.MONTH)
+        val records = recordset.filterByMonth(currentMonth)
+        updateRecyclerView(records)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
@@ -87,9 +127,8 @@ class CollectionActivity : AppCompatActivity() {
             }
         }
         val inputStream: InputStream = assets.open(filePath)
-        val recordList = RecordXmlParser(this).parse(inputStream)
-        viewAdapter = RecordListAdapter(recordList)
-        recyclerView.adapter = viewAdapter
+        recordset = RecordXmlParser(this).parse(inputStream)
+        updateRecyclerView(recordset.records)
     }
 
     private fun changeGame(game: Int) {

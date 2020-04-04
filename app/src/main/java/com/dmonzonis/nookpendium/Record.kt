@@ -18,17 +18,27 @@ data class Record(
     var captured: Boolean?
 )
 
+class Recordset(val records: List<Record>) {
+    fun filter(filter: (r: Record) -> Boolean): List<Record> {
+        return records.filter(filter)
+    }
+
+    fun filterByMonth(month: Int): List<Record> {
+        return filter { month < it.availability.size && it.availability[month] == 1 }
+    }
+}
+
 class RecordXmlParser(private val context: Context) {
 
     private val ns: String? = null
 
-    fun parse(inputStream: InputStream): List<Record> {
+    fun parse(inputStream: InputStream): Recordset {
         inputStream.use {
             val parser: XmlPullParser = Xml.newPullParser()
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false)
             parser.setInput(it, null)
             parser.nextTag()
-            return readAllRecords(parser)
+            return Recordset(readAllRecords(parser))
         }
     }
 
