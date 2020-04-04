@@ -14,4 +14,7 @@
     <string name="acnl_fish_path">acnl/fish.xml</string>
     <string name="acnl_bugs_path">acnl/bugs.xml</string>
     <string name="acnl_underwater_path">acnl/underwater.xml</string>
+    <string name="filters">Filters</string>
+    <string name="filterThisMonth">Show available this month</string>
+    <string name="filterClear">Clear all filters</string>
 </resources>
