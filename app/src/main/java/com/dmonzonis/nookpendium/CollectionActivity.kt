@@ -2,9 +2,7 @@ package com.dmonzonis.nookpendium
 
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
-
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -47,7 +45,7 @@ class CollectionActivity : AppCompatActivity() {
         // Load default game assets (Fish, ACNH)
         loadGameAssets(tabLayout.getTabAt(0))
 
-        tabLayout.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener {
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(p0: TabLayout.Tab?) {
             }
 
@@ -69,18 +67,19 @@ class CollectionActivity : AppCompatActivity() {
     }
 
     private fun loadGameAssets(tab: TabLayout.Tab?) {
+        // ACNH needs 2 tabs while ACNL needs 3
+        if (selectedGame == R.string.game_acnh && tabLayout.tabCount > 2) {
+            tabLayout.removeTabAt(2)
+        } else if (selectedGame == R.string.game_acnl && tabLayout.tabCount < 3) {
+            tabLayout.addTab(tabLayout.newTab().setText(R.string.underwater), 2)
+        }
+
         val filePath = if (selectedGame == R.string.game_acnh) {
-            if (tabLayout.tabCount > 2) {
-                tabLayout.removeTabAt(2)
-            }
             when (tab?.text.toString()) {
                 getString(R.string.fish) -> getString(R.string.acnh_fish_nh_path)
                 else -> getString(R.string.acnh_bugs_nh_path)
             }
         } else {
-            if (tabLayout.tabCount < 3) {
-                tabLayout.addTab(tabLayout.newTab().setText(R.string.underwater), 2)
-            }
             when (tab?.text.toString()) {
                 getString(R.string.fish) -> getString(R.string.acnl_fish_path)
                 getString(R.string.bugs) -> getString(R.string.acnl_bugs_path)
