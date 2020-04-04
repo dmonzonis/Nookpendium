@@ -33,7 +33,7 @@ class RecordListAdapter(private val records: List<Record>) :
     override fun onBindViewHolder(holder: RecordHolder, position: Int) {
         val record: Record = records[position]
         holder.itemView.text_name.text = record.name
-        holder.itemView.text_price.text = record.price
+        holder.itemView.text_price.text = record.price?.toString() ?: "?"
         holder.itemView.img_picture.setImageResource(record.imageId)
 
         // Get captured state from shared preferences if it hasn't been loaded yet
