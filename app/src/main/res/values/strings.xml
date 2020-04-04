@@ -17,4 +17,12 @@
     <string name="filters">Filters</string>
     <string name="filterThisMonth">Show available this month</string>
     <string name="filterClear">Clear all filters</string>
+    <string name="sortBy">Sort by...</string>
+    <string name="sortByMessage">Select field to sort by</string>
+    <string name="name">Name</string>
+    <string name="price">Price</string>
+    <string name="order">Order</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="sort">Sort</string>
 </resources>

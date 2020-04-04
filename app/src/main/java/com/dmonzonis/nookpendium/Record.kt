@@ -9,7 +9,7 @@ import java.io.InputStream
 data class Record(
     val id: String,
     val name: String,
-    val price: String,
+    val price: Int?,
     val time: String,
     val location: String,
     val shadowSize: Int?,
@@ -25,6 +25,22 @@ class Recordset(val records: List<Record>) {
 
     fun filterByMonth(month: Int): List<Record> {
         return filter { month < it.availability.size && it.availability[month] == 1 }
+    }
+
+    fun sorted(field: String, descending: Boolean): List<Record> {
+        return when (field) {
+            "name" -> if (descending) {
+                records.sortedByDescending { it.name }
+            } else {
+                records.sortedBy { it.name }
+            }
+            // Sort by price by default
+            else -> if (descending) {
+                records.sortedByDescending { it.price }
+            } else {
+                records.sortedBy { it.price }
+            }
+        }
     }
 }
 
@@ -61,7 +77,7 @@ class RecordXmlParser(private val context: Context) {
         var id = ""
         var name = ""
         var imageFilename = ""
-        var price = ""
+        var price: Int? = null
         var time = ""
         var location = ""
         var shadowSize: Int? = null
@@ -76,7 +92,7 @@ class RecordXmlParser(private val context: Context) {
             when (parser.name) {
                 "id" -> id = readText(parser)
                 "name" -> name = readText(parser)
-                "price" -> price = readText(parser)
+                "price" -> price = readText(parser).toIntOrNull()
                 "time" -> time = readText(parser)
                 "location" -> location = readText(parser)
                 "shadow_size" -> shadowSize = readText(parser).toIntOrNull()
