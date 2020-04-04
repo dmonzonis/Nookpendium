@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">Nookpendium</string>
-    <string name="fish_file">fish_nh.xml</string>
-    <string name="bugs_file">bugs_nh.xml</string>
-    <string name="underwater_file">underwater.xml</string>
     <string name="filename">filename</string>
     <string name="app_title_long">Nookpendium</string>
     <string name="fish">Fish</string>
     <string name="bugs">Bugs</string>
     <string name="underwater">Deep-sea creatures</string>
+    <string name="game_acnl">Animal Crossing: New Leaf</string>
+    <string name="game_acnh">Animal Crossing: New Horizons</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="acnh_fish_nh_path">acnh/fish_nh.xml</string>
+    <string name="acnh_bugs_nh_path">acnh/bugs_nh.xml</string>
+    <string name="acnl_fish_path">acnl/fish.xml</string>
+    <string name="acnl_bugs_path">acnl/bugs.xml</string>
+    <string name="acnl_underwater_path">acnl/underwater.xml</string>
 </resources>

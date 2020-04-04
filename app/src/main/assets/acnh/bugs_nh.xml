@@ -94,7 +94,7 @@
     <name>Rajah Brooke's birdwing</name>
     <image>nh_icon_rajahbrookesbirdwing.png</image>
     <price>2500</price>
-    <location>Flying by Purple Flowers</location>
+    <location>Flying</location>
     <time>8 AM - 5 PM</time>
     <availability>110111111001</availability>
   </Record>
@@ -354,7 +354,7 @@
     <id>240</id>
     <name>Giant water bug</name>
     <image>nh_icon_giantwaterbug.png</image>
-    <price>2000</price>
+    <price>1600</price>
     <location>On Ponds and Rivers</location>
     <time>7 PM - 8 AM</time>
     <availability>000111111000</availability>
@@ -534,7 +534,7 @@
     <id>260</id>
     <name>Golden stag</name>
     <image>nh_icon_goldenstag.png</image>
-    <price>?</price>
+    <price>12000</price>
     <location>On Trees (Coconut)</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
@@ -543,7 +543,7 @@
     <id>261</id>
     <name>Giraffe stag</name>
     <image>nh_icon_giraffestag.png</image>
-    <price>?</price>
+    <price>12000</price>
     <location>On Trees (Coconut?)</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
@@ -579,7 +579,7 @@
     <id>265</id>
     <name>Horned hercules</name>
     <image>nh_icon_hornedhercules.png</image>
-    <price>?</price>
+    <price>12000</price>
     <location>On Trees (Coconut)</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
