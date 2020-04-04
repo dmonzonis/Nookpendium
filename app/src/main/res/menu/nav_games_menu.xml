@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miGameAcnh"
+        android:title="@string/game_acnh"/>
+    <item
+        android:id="@+id/miGameAcnl"
+        android:title="@string/game_acnl"/>
+</menu>

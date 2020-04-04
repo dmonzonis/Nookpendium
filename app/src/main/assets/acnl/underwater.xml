@@ -1,0 +1,272 @@
+<RecordList>
+  <Record>
+    <id>501</id>
+    <name>Seaweed</name>
+    <image>seaweed_hhd_icon.png</image>
+    <price>200</price>
+    <shadow_size>Large</shadow_size>
+    <time>All day</time>
+    <availability>111111100011</availability>
+  </Record>
+  <Record>
+    <id>502</id>
+    <name>Sea grapes</name>
+    <image>sea_grapes_hhd_icon.png</image>
+    <price>600</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>503</id>
+    <name>Sea urchin</name>
+    <image>sea_urchin_hhd_icon.png</image>
+    <price>800</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>000011111000</availability>
+  </Record>
+  <Record>
+    <id>504</id>
+    <name>Acorn barnacle</name>
+    <image>acorn_barnacle_hhd_icon.png</image>
+    <price>200</price>
+    <shadow_size>Very small</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>505</id>
+    <name>Oyster</name>
+    <image>oyster_hhd_icon.png</image>
+    <price>400</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>110000001111</availability>
+  </Record>
+  <Record>
+    <id>506</id>
+    <name>Turban shell</name>
+    <image>turban_shell_hhd_icon.png</image>
+    <price>300</price>
+    <shadow_size>Small</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111011111</availability>
+  </Record>
+  <Record>
+    <id>507</id>
+    <name>Abalone</name>
+    <image>abalone_hhd_icon.png</image>
+    <price>400</price>
+    <shadow_size>Medium</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>508</id>
+    <name>Ear shell</name>
+    <image>ear_shell_hhd_icon.png</image>
+    <price>300</price>
+    <shadow_size>Small</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>509</id>
+    <name>Clam</name>
+    <image>clam_hhd_icon.png</image>
+    <price>300</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>111100001111</availability>
+  </Record>
+  <Record>
+    <id>510</id>
+    <name>Pearl oyster</name>
+    <image>pearl_oyster_hhd_icon.png</image>
+    <price>1,600</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>511</id>
+    <name>Scallop</name>
+    <image>scallop_hhd_icon.png</image>
+    <price>1,000</price>
+    <shadow_size>Medium</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>512</id>
+    <name>Sea anemone</name>
+    <image>sea_anemone_hhd_icon.png</image>
+    <price>100</price>
+    <shadow_size>Medium</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>513</id>
+    <name>Sea star</name>
+    <image>sea_star_hhd_icon.png</image>
+    <price>100</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>514</id>
+    <name>Sea cucumber</name>
+    <image>sea_cucumber_hhd_icon.png</image>
+    <price>150</price>
+    <shadow_size>Medium</shadow_size>
+    <time>All day</time>
+    <availability>111100000011</availability>
+  </Record>
+  <Record>
+    <id>515</id>
+    <name>Sea slug</name>
+    <image>sea_slug_hhd_icon.png</image>
+    <price>200</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>516</id>
+    <name>Flatworm</name>
+    <image>flatworm_hhd_icon.png</image>
+    <price>200</price>
+    <shadow_size>Small</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>517</id>
+    <name>Mantis shrimp</name>
+    <image>mantis_shrimp_hhd_icon.png</image>
+    <price>1,250</price>
+    <shadow_size>Small</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>518</id>
+    <name>Sweet shrimp</name>
+    <image>sweet_shrimp_hhd_icon.png</image>
+    <price>650</price>
+    <shadow_size>Small</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>110000001111</availability>
+  </Record>
+  <Record>
+    <id>519</id>
+    <name>Tiger prawn</name>
+    <image>tiger_prawn_hhd_icon.png</image>
+    <price>1,600</price>
+    <shadow_size>Small</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>520</id>
+    <name>Spiny lobster</name>
+    <image>spiny_lobster_hhd_icon.png</image>
+    <price>3,000</price>
+    <shadow_size>Large</shadow_size>
+    <time>9 PM - 4 AM</time>
+    <availability>000000001111</availability>
+  </Record>
+  <Record>
+    <id>521</id>
+    <name>Lobster</name>
+    <image>lobster_hhd_icon.png</image>
+    <price>2,500</price>
+    <shadow_size>Large</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>522</id>
+    <name>Snow crab</name>
+    <image>snow_crab_hhd_icon.png</image>
+    <price>4,000</price>
+    <shadow_size>Large</shadow_size>
+    <time>All day</time>
+    <availability>111100000011</availability>
+  </Record>
+  <Record>
+    <id>523</id>
+    <name>Horsehair crab</name>
+    <image>horsehair_crab_hhd_icon.png</image>
+    <price>4,000</price>
+    <shadow_size>Medium</shadow_size>
+    <time>All day</time>
+    <availability>111100000011</availability>
+  </Record>
+  <Record>
+    <id>524</id>
+    <name>Red king crab</name>
+    <image>red_king_crab_hhd_icon.png</image>
+    <price>6,000</price>
+    <shadow_size>Large</shadow_size>
+    <time>All day</time>
+    <availability>111000000011</availability>
+  </Record>
+  <Record>
+    <id>525</id>
+    <name>Spider crab</name>
+    <image>spider_crab_hhd_icon.png</image>
+    <price>10,000</price>
+    <shadow_size>Huge</shadow_size>
+    <time>All day</time>
+    <availability>001100000000</availability>
+  </Record>
+  <Record>
+    <id>526</id>
+    <name>Octopus</name>
+    <image>octopus_hhd_icon.png</image>
+    <price>1,000</price>
+    <shadow_size>Medium</shadow_size>
+    <time>All day</time>
+    <availability>101111101111</availability>
+  </Record>
+  <Record>
+    <id>527</id>
+    <name>Spotted garden eel</name>
+    <image>spotted_garden_eel_hhd_icon.png</image>
+    <price>600</price>
+    <shadow_size>Small</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>528</id>
+    <name>Chambered nautilus</name>
+    <image>chambered_nautilus_hhd_icon.png</image>
+    <price>900</price>
+    <shadow_size>Medium</shadow_size>
+    <time>All day</time>
+    <availability>000001110000</availability>
+  </Record>
+  <Record>
+    <id>529</id>
+    <name>Horseshoe crab</name>
+    <image>horseshoe_crab_hhd_icon.png</image>
+    <price>1,500</price>
+    <shadow_size>Medium</shadow_size>
+    <time>9 PM - 4 AM</time>
+    <availability>000000111000</availability>
+  </Record>
+  <Record>
+    <id>530</id>
+    <name>Giant isopod</name>
+    <image>giant_isopod_hhd_icon.png</image>
+    <price>9,000</price>
+    <shadow_size>Medium</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+</RecordList>

@@ -1,0 +1,722 @@
+<RecordList>
+  <Record>
+    <id>301</id>
+    <name>Bitterling</name>
+    <image>bitterling_hhd_icon.png</image>
+    <price>900</price>
+    <location>River</location>
+    <shadow_size>1</shadow_size>
+    <time>All day</time>
+    <availability>110000000011</availability>
+  </Record>
+  <Record>
+    <id>302</id>
+    <name>Pale chub</name>
+    <image>pale_chub_hhd_icon.png</image>
+    <price>200</price>
+    <location>River</location>
+    <shadow_size>1</shadow_size>
+    <time>9 AM - 4 PM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>303</id>
+    <name>Crucian carp</name>
+    <image>crucian_carp_hhd_icon.png</image>
+    <price>120</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>304</id>
+    <name>Dace</name>
+    <image>dace_hhd_icon.png</image>
+    <price>200</price>
+    <location>River</location>
+    <shadow_size>3</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>305</id>
+    <name>Barbel steed</name>
+    <image>barbel_steed_hhd_icon.png</image>
+    <price>200</price>
+    <location>River</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>306</id>
+    <name>Carp</name>
+    <image>carp_hhd_icon.png</image>
+    <price>300</price>
+    <location>River</location>
+    <shadow_size>4</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>307</id>
+    <name>Koi</name>
+    <image>koi_hhd_icon.png</image>
+    <price>4,000</price>
+    <location>River</location>
+    <shadow_size>4</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>308</id>
+    <name>Goldfish</name>
+    <image>goldfish_hhd_icon.png</image>
+    <price>1,300</price>
+    <location>River</location>
+    <shadow_size>1</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>309</id>
+    <name>Popeyed goldfish</name>
+    <image>popeyed_goldfish_hhd_icon.png</image>
+    <price>1,300</price>
+    <location>River</location>
+    <shadow_size>1</shadow_size>
+    <time>9 AM - 4 PM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>310</id>
+    <name>Killifish</name>
+    <image>killifish_hhd_icon.png</image>
+    <price>300</price>
+    <location>Pond</location>
+    <shadow_size>1</shadow_size>
+    <time>All day</time>
+    <availability>000111110000</availability>
+  </Record>
+  <Record>
+    <id>311</id>
+    <name>Crawfish</name>
+    <image>crawfish_hhd_icon.png</image>
+    <price>200</price>
+    <location>Pond</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>00011111*000</availability>
+  </Record>
+  <Record>
+    <id>312</id>
+    <name>Soft-shelled turtle</name>
+    <image>soft_shelled_turtle_hhd_icon.png</image>
+    <price>3,750</price>
+    <location>River</location>
+    <shadow_size>3</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000000011000</availability>
+  </Record>
+  <Record>
+    <id>313</id>
+    <name>Tadpole</name>
+    <image>tadpole_hhd_icon.png</image>
+    <price>100</price>
+    <location>Pond</location>
+    <shadow_size>1</shadow_size>
+    <time>All day</time>
+    <availability>001111100000</availability>
+  </Record>
+  <Record>
+    <id>314</id>
+    <name>Frog</name>
+    <image>frog_hhd_icon.png</image>
+    <price>120</price>
+    <location>Pond</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>000011110000</availability>
+  </Record>
+  <Record>
+    <id>315</id>
+    <name>Freshwater goby</name>
+    <image>freshwater_goby_hhd_icon.png</image>
+    <price>300</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>316</id>
+    <name>Loach</name>
+    <image>loach_hhd_icon.png</image>
+    <price>300</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>001110000000</availability>
+  </Record>
+  <Record>
+    <id>317</id>
+    <name>Catfish</name>
+    <image>catfish_hhd_icon.png</image>
+    <price>800</price>
+    <location>Lake</location>
+    <shadow_size>4</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000011111100</availability>
+  </Record>
+  <Record>
+    <id>318</id>
+    <name>Eel</name>
+    <image>eel_hhd_icon.png</image>
+    <price>2,000</price>
+    <location>River</location>
+    <shadow_size>Narrow</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>00000111*000</availability>
+  </Record>
+  <Record>
+    <id>319</id>
+    <name>Giant snakehead</name>
+    <image>giant_snakehead_hhd_icon.png</image>
+    <price>5,500</price>
+    <location>Lake</location>
+    <shadow_size>5</shadow_size>
+    <time>9 AM - 4 PM</time>
+    <availability>000001110000</availability>
+  </Record>
+  <Record>
+    <id>320</id>
+    <name>Bluegill</name>
+    <image>bluegill_hhd_icon.png</image>
+    <price>120</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>9 AM - 4 PM</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>321</id>
+    <name>Yellow perch</name>
+    <image>yellow_perch_hhd_icon.png</image>
+    <price>240</price>
+    <location>River</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>111000000111</availability>
+  </Record>
+  <Record>
+    <id>322</id>
+    <name>Black bass</name>
+    <image>black_bass_hhd_icon.png</image>
+    <price>300</price>
+    <location>River</location>
+    <shadow_size>4</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>323</id>
+    <name>Pike</name>
+    <image>pike_hhd_icon.png</image>
+    <price>1,800</price>
+    <location>River</location>
+    <shadow_size>5</shadow_size>
+    <time>4 AM - 9 PM</time>
+    <availability>000000001111</availability>
+  </Record>
+  <Record>
+    <id>324</id>
+    <name>Pond smelt</name>
+    <image>pond_smelt_hhd_icon.png</image>
+    <price>300</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>110000000001</availability>
+  </Record>
+  <Record>
+    <id>325</id>
+    <name>Sweetfish</name>
+    <image>sweetfish_hhd_icon.png</image>
+    <price>900</price>
+    <location>River</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>000000111000</availability>
+  </Record>
+  <Record>
+    <id>326</id>
+    <name>Cherry salmon</name>
+    <image>cherry_salmon_hhd_icon.png</image>
+    <price>1,000</price>
+    <location>River</location>
+    <shadow_size>3</shadow_size>
+    <time>4 PM - 9 PM</time>
+    <availability>001111001110</availability>
+  </Record>
+  <Record>
+    <id>327</id>
+    <name>Char</name>
+    <image>char_hhd_icon.png</image>
+    <price>3,800</price>
+    <location>Waterfall</location>
+    <shadow_size>3</shadow_size>
+    <time>4 PM - 9 PM</time>
+    <availability>001111001110</availability>
+  </Record>
+  <Record>
+    <id>328</id>
+    <name>Rainbow trout</name>
+    <image>rainbow_trout_hhd_icon.png</image>
+    <price>800</price>
+    <location>River</location>
+    <shadow_size>4</shadow_size>
+    <time>4 PM - 9 PM</time>
+    <availability>001111001110</availability>
+  </Record>
+  <Record>
+    <id>329</id>
+    <name>Stringfish</name>
+    <image>stringfish_hhd_icon.png</image>
+    <price>15,000</price>
+    <location>River</location>
+    <shadow_size>6</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>110000000001</availability>
+  </Record>
+  <Record>
+    <id>330</id>
+    <name>Salmon</name>
+    <image>salmon_hhd_icon.png</image>
+    <price>700</price>
+    <location>*</location>
+    <shadow_size>4</shadow_size>
+    <time>All day</time>
+    <availability>000000001000</availability>
+  </Record>
+  <Record>
+    <id>331</id>
+    <name>King salmon</name>
+    <image>king_salmon_hhd_icon.png</image>
+    <price>1,800</price>
+    <location>Waterfall</location>
+    <shadow_size>6</shadow_size>
+    <time>All day</time>
+    <availability>000000001000</availability>
+  </Record>
+  <Record>
+    <id>332</id>
+    <name>Mitten crab</name>
+    <image>mitten_crab_hhd_icon.png</image>
+    <price>2,000</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>00000000*110</availability>
+  </Record>
+  <Record>
+    <id>333</id>
+    <name>Guppy</name>
+    <image>guppy_hhd_icon.png</image>
+    <price>1,300</price>
+    <location>River</location>
+    <shadow_size>1</shadow_size>
+    <time>9 AM - 4 PM</time>
+    <availability>000111111110</availability>
+  </Record>
+  <Record>
+    <id>334</id>
+    <name>Nibble fish</name>
+    <image>nibble_fish_hhd_icon.png</image>
+    <price>1,500</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>9 AM - 4 PM</time>
+    <availability>000011111000</availability>
+  </Record>
+  <Record>
+    <id>335</id>
+    <name>Angelfish</name>
+    <image>angelfish_hhd_icon.png</image>
+    <price>3,000</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000011111100</availability>
+  </Record>
+  <Record>
+    <id>336</id>
+    <name>Neon tetra</name>
+    <image>neon_tetra_hhd_icon.png</image>
+    <price>500</price>
+    <location>River</location>
+    <shadow_size>1</shadow_size>
+    <time>9 AM - 4 PM</time>
+    <availability>000111111110</availability>
+  </Record>
+  <Record>
+    <id>337</id>
+    <name>Piranha</name>
+    <image>piranha_hhd_icon.png</image>
+    <price>2,500</price>
+    <location>River</location>
+    <shadow_size>2</shadow_size>
+    <time>9 PM - 4 AM</time>
+    <availability>00000111*000</availability>
+  </Record>
+  <Record>
+    <id>338</id>
+    <name>Arowana</name>
+    <image>arowana_hhd_icon.png</image>
+    <price>10,000</price>
+    <location>River</location>
+    <shadow_size>4</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>00000111*000</availability>
+  </Record>
+  <Record>
+    <id>339</id>
+    <name>Dorado</name>
+    <image>dorado_hhd_icon.png</image>
+    <price>15,000</price>
+    <location>River</location>
+    <shadow_size>5</shadow_size>
+    <time>4 AM - 9 PM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>340</id>
+    <name>Gar</name>
+    <image>gar_hhd_icon.png</image>
+    <price>6,000</price>
+    <location>Lake</location>
+    <shadow_size>6</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>341</id>
+    <name>Arapaima</name>
+    <image>arapaima_hhd_icon.png</image>
+    <price>10,000</price>
+    <location>River</location>
+    <shadow_size>6</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000000111000</availability>
+  </Record>
+  <Record>
+    <id>342</id>
+    <name>Saddled bichir</name>
+    <image>saddled_bichir_hhd_icon.png</image>
+    <price>4,000</price>
+    <location>River</location>
+    <shadow_size>4</shadow_size>
+    <time>9 PM - 4 AM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>343</id>
+    <name>Sea butterfly</name>
+    <image>sea_butterfly_hhd_icon.png</image>
+    <price>1,000</price>
+    <location>Ocean</location>
+    <shadow_size>1</shadow_size>
+    <time>All day</time>
+    <availability>110000000001</availability>
+  </Record>
+  <Record>
+    <id>344</id>
+    <name>Seahorse</name>
+    <image>sea_horse_hhd_icon.png</image>
+    <price>1,100</price>
+    <location>Ocean</location>
+    <shadow_size>1</shadow_size>
+    <time>All day</time>
+    <availability>000111111110</availability>
+  </Record>
+  <Record>
+    <id>345</id>
+    <name>Clownfish</name>
+    <image>clownfish_hhd_icon.png</image>
+    <price>650</price>
+    <location>Ocean</location>
+    <shadow_size>1</shadow_size>
+    <time>All day</time>
+    <availability>000111111000</availability>
+  </Record>
+  <Record>
+    <id>346</id>
+    <name>Surgeonfish</name>
+    <image>surgeonfish_hhd_icon.png</image>
+    <price>1,000</price>
+    <location>Ocean</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>000111111000</availability>
+  </Record>
+  <Record>
+    <id>347</id>
+    <name>Butterfly fish</name>
+    <image>butterflyfish_hhd_icon.png</image>
+    <price>1,000</price>
+    <location>Ocean</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>000111111000</availability>
+  </Record>
+  <Record>
+    <id>348</id>
+    <name>Napoleonfish</name>
+    <image>napoleonfish_hhd_icon.png</image>
+    <price>10,000</price>
+    <location>Ocean</location>
+    <shadow_size>6</shadow_size>
+    <time>4 AM - 9 PM</time>
+    <availability>000000110000</availability>
+  </Record>
+  <Record>
+    <id>349</id>
+    <name>Zebra turkeyfish</name>
+    <image>zebra_turkeyfish_hhd_icon.png</image>
+    <price>400</price>
+    <location>Ocean</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>000111111110</availability>
+  </Record>
+  <Record>
+    <id>350</id>
+    <name>Blowfish</name>
+    <image>blowfish_hhd_icon.png</image>
+    <price>125</price>
+    <location>Ocean</location>
+    <shadow_size>3</shadow_size>
+    <time>9 PM - 4 AM</time>
+    <availability>110000000011</availability>
+  </Record>
+  <Record>
+    <id>351</id>
+    <name>Puffer fish</name>
+    <image>puffer_fish_hhd_icon.png</image>
+    <price>240</price>
+    <location>Ocean</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>000000111000</availability>
+  </Record>
+  <Record>
+    <id>352</id>
+    <name>Horse mackerel</name>
+    <image>horse_mackerel_hhd_icon.png</image>
+    <price>150</price>
+    <location>Ocean</location>
+    <shadow_size>2</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>353</id>
+    <name>Barred knifejaw</name>
+    <image>barred_knifejaw_hhd_icon.png</image>
+    <price>5,000</price>
+    <location>Ocean</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>001111111110</availability>
+  </Record>
+  <Record>
+    <id>354</id>
+    <name>Sea bass</name>
+    <image>sea_bass_hhd_icon.png</image>
+    <price>200</price>
+    <location>Ocean</location>
+    <shadow_size>5</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>355</id>
+    <name>Red snapper</name>
+    <image>red_snapper_hhd_icon.png</image>
+    <price>3,000</price>
+    <location>Ocean</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>356</id>
+    <name>Dab</name>
+    <image>dab_hhd_icon.png</image>
+    <price>300</price>
+    <location>Ocean</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>111100000111</availability>
+  </Record>
+  <Record>
+    <id>357</id>
+    <name>Olive flounder</name>
+    <image>olive_flounder_hhd_icon.png</image>
+    <price>800</price>
+    <location>Ocean</location>
+    <shadow_size>4</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>358</id>
+    <name>Squid</name>
+    <image>squid_hhd_icon.png</image>
+    <price>400</price>
+    <location>Ocean</location>
+    <shadow_size>3</shadow_size>
+    <time>All day</time>
+    <availability>1111111*0001</availability>
+  </Record>
+  <Record>
+    <id>359</id>
+    <name>Moray eel</name>
+    <image>moray_eel_hhd_icon.png</image>
+    <price>2,000</price>
+    <location>Ocean</location>
+    <shadow_size>5</shadow_size>
+    <time>All day</time>
+    <availability>000001111100</availability>
+  </Record>
+  <Record>
+    <id>360</id>
+    <name>Ribbon eel</name>
+    <image>ribbon_eel_hhd_icon.png</image>
+    <price>600</price>
+    <location>Island</location>
+    <shadow_size>Narrow</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>361</id>
+    <name>Football fish</name>
+    <image>football_fish_hhd_icon.png</image>
+    <price>2,500</price>
+    <location>Ocean</location>
+    <shadow_size>4</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111000000011</availability>
+  </Record>
+  <Record>
+    <id>362</id>
+    <name>Tuna</name>
+    <image>tuna_hhd_icon.png</image>
+    <price>7,000</price>
+    <location>Ocean</location>
+    <shadow_size>6</shadow_size>
+    <time>All day</time>
+    <availability>111000000011</availability>
+  </Record>
+  <Record>
+    <id>363</id>
+    <name>Blue marlin</name>
+    <image>blue_marlin_hhd_icon.png</image>
+    <price>10,000</price>
+    <location>Ocean</location>
+    <shadow_size>6</shadow_size>
+    <time>All day</time>
+    <availability>000000111000</availability>
+  </Record>
+  <Record>
+    <id>364</id>
+    <name>Giant trevally</name>
+    <image>giant_trevally_hhd_icon.png</image>
+    <price>4,500</price>
+    <location>Island</location>
+    <shadow_size>5</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>365</id>
+    <name>Ray</name>
+    <image>ray_hhd_icon.png</image>
+    <price>3,000</price>
+    <location>Ocean</location>
+    <shadow_size>5</shadow_size>
+    <time>4 AM - 9 PM</time>
+    <availability>000000111110</availability>
+  </Record>
+  <Record>
+    <id>366</id>
+    <name>Ocean sunfish</name>
+    <image>ocean_sunfish_hhd_icon.png</image>
+    <price>4,000</price>
+    <location>Ocean</location>
+    <shadow_size>(fin)</shadow_size>
+    <time>4 AM - 9 PM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>367</id>
+    <name>Hammerhead shark</name>
+    <image>hammerhead_shark_hhd_icon.png</image>
+    <price>8,000</price>
+    <location>Ocean</location>
+    <shadow_size>(fin)</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>368</id>
+    <name>Shark</name>
+    <image>shark_hhd_icon.png</image>
+    <price>15,000</price>
+    <location>Ocean</location>
+    <shadow_size>(fin)</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>369</id>
+    <name>Saw shark</name>
+    <image>saw_shark_hhd_icon.png</image>
+    <price>12,000</price>
+    <location>Ocean</location>
+    <shadow_size>(fin)</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>000001111000</availability>
+  </Record>
+  <Record>
+    <id>370</id>
+    <name>Whale shark</name>
+    <image>whale_shark_hhd_icon.png</image>
+    <price>13,000</price>
+    <location>Island</location>
+    <shadow_size>(fin)</shadow_size>
+    <time>All day</time>
+    <availability>111111111111</availability>
+  </Record>
+  <Record>
+    <id>371</id>
+    <name>Oarfish</name>
+    <image>oarfish_hhd_icon.png</image>
+    <price>9,000</price>
+    <location>Ocean</location>
+    <shadow_size>6</shadow_size>
+    <time>All day</time>
+    <availability>111110000001</availability>
+  </Record>
+  <Record>
+    <id>372</id>
+    <name>Coelacanth</name>
+    <image>coelacanth_hhd_icon.png</image>
+    <price>15,000</price>
+    <location>(rain or snow)</location>
+    <shadow_size>6</shadow_size>
+    <time>4 PM - 9 AM</time>
+    <availability>111111111111</availability>
+  </Record>
+</RecordList>
