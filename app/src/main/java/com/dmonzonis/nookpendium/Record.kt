@@ -18,17 +18,21 @@ data class Record(
     var captured: Boolean?
 )
 
-class Recordset(val records: List<Record>) {
-    fun filter(filter: (r: Record) -> Boolean): List<Record> {
-        return records.filter(filter)
+class Recordset(private val totalRecords: List<Record>) {
+    // Current subset of records after having applied filters/sorting
+    var records = totalRecords
+
+    fun applyFilter(filter: (r: Record) -> Boolean): List<Record> {
+        records = records.filter(filter)
+        return records
     }
 
-    fun filterByMonth(month: Int): List<Record> {
-        return filter { month < it.availability.size && it.availability[month] == 1 }
+    fun applyFilterByMonth(month: Int): List<Record> {
+        return applyFilter { month < it.availability.size && it.availability[month] == 1 }
     }
 
-    fun sorted(field: String, descending: Boolean): List<Record> {
-        return when (field) {
+    fun applySort(field: String, descending: Boolean): List<Record> {
+        records = when (field) {
             "name" -> if (descending) {
                 records.sortedByDescending { it.name }
             } else {
@@ -41,6 +45,12 @@ class Recordset(val records: List<Record>) {
                 records.sortedBy { it.price }
             }
         }
+        return records
+    }
+
+    // Removes all filters and sorting applied to the recordset
+    fun restore() {
+        records = totalRecords
     }
 }
 

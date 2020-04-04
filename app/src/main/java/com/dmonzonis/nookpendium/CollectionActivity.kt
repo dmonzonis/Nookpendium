@@ -66,7 +66,10 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
         fabFilters.setOnClickListener { toggleFilterSubmenuVisibility() }
         setFilterButtonsEnabled(false)
         fabFilterThisMonth.setOnClickListener { filterByThisMonth() }
-        fabFilterClear.setOnClickListener { updateRecyclerView(recordset.records) }
+        fabFilterClear.setOnClickListener {
+            recordset.restore()
+            updateRecyclerView(recordset.records)
+        }
         fabSortBy.setOnClickListener {
             val sortByDialog = SortDialogFragment()
             sortByDialog.show(supportFragmentManager, "sort_by")
@@ -74,7 +77,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
     }
 
     override fun onDialogPositiveClick(dialog: DialogFragment, token: String, descending: Boolean) {
-        updateRecyclerView(recordset.sorted(token, descending))
+        updateRecyclerView(recordset.applySort(token, descending))
     }
 
     private fun updateRecyclerView(records: List<Record>) {
@@ -107,7 +110,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
 
     private fun filterByThisMonth() {
         val currentMonth = Calendar.getInstance().get(Calendar.MONTH)
-        val records = recordset.filterByMonth(currentMonth)
+        val records = recordset.applyFilterByMonth(currentMonth)
         updateRecyclerView(records)
     }
 
