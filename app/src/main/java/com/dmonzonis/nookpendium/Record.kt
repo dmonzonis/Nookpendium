@@ -102,7 +102,7 @@ class RecordXmlParser(private val context: Context) {
             when (parser.name) {
                 "id" -> id = readText(parser)
                 "name" -> name = readText(parser)
-                "price" -> price = readText(parser).toIntOrNull()
+                "price" -> price = readText(parser).replace(",", "").toIntOrNull()
                 "time" -> time = readText(parser)
                 "location" -> location = readText(parser)
                 "shadow_size" -> shadowSize = readText(parser).toIntOrNull()
