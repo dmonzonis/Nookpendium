@@ -30,6 +30,7 @@ build/
 .navigation
 captures/
 output.json 
+release/
 
 #NDK
 obj/
