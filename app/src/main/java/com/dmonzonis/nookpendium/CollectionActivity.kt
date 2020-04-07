@@ -44,14 +44,17 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
 
         // Set up the recycler view
         viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        viewAdapter = RecordListAdapter()
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = viewManager
+        recyclerView.adapter = viewAdapter
 
         // Load default game assets (Fish, ACNH)
         loadGameAssets(tabLayout.getTabAt(0))
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(p0: TabLayout.Tab?) {
+                loadGameAssets(p0)
             }
 
             override fun onTabUnselected(p0: TabLayout.Tab?) {
@@ -68,7 +71,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
         fabFilterThisMonth.setOnClickListener { filterByThisMonth() }
         fabFilterClear.setOnClickListener {
             recordset.restore()
-            updateRecyclerView(recordset.records)
+            viewAdapter.setRecords(recordset.records)
         }
         fabSortBy.setOnClickListener {
             val sortByDialog = SortDialogFragment()
@@ -77,13 +80,9 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
     }
 
     override fun onDialogPositiveClick(dialog: DialogFragment, token: String, descending: Boolean) {
-        updateRecyclerView(recordset.applySort(token, descending))
+        viewAdapter.setRecords(recordset.applySort(token, descending))
     }
 
-    private fun updateRecyclerView(records: List<Record>) {
-        viewAdapter = RecordListAdapter(records)
-        recyclerView.adapter = viewAdapter
-    }
 
     private fun setFilterButtonsEnabled(enabled: Boolean) {
         fabFilterThisMonth.isEnabled = enabled
@@ -111,7 +110,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
     private fun filterByThisMonth() {
         val currentMonth = Calendar.getInstance().get(Calendar.MONTH)
         val records = recordset.applyFilterByMonth(currentMonth)
-        updateRecyclerView(records)
+        viewAdapter.setRecords(records)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
@@ -143,7 +142,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
         }
         val inputStream: InputStream = assets.open(filePath)
         recordset = RecordXmlParser(this).parse(inputStream)
-        updateRecyclerView(recordset.records)
+        viewAdapter.setRecords(recordset.records)
     }
 
     private fun changeGame(game: Int) {
