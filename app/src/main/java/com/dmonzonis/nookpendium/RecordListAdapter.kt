@@ -8,11 +8,12 @@ import android.widget.CheckBox
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.record_row.view.*
 
-class RecordListAdapter(private val records: List<Record>) :
+class RecordListAdapter() :
     RecyclerView.Adapter<RecordListAdapter.RecordHolder>() {
 
     private val prefsFilename = "com.dmonzonis.nookpedium.sharedPrefs"
     private var sharedPrefs: SharedPreferences? = null
+    private var records: List<Record> = listOf()
 
     class RecordHolder(v: View) : RecyclerView.ViewHolder(v) {
         val checkBox: CheckBox = v.findViewById(R.id.checkbox_captured)
@@ -29,6 +30,11 @@ class RecordListAdapter(private val records: List<Record>) :
     }
 
     override fun getItemCount() = records.size
+
+    fun setRecords(records: List<Record>) {
+        this.records = records
+        notifyDataSetChanged()
+    }
 
     override fun onBindViewHolder(holder: RecordHolder, position: Int) {
         val record: Record = records[position]
