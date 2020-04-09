@@ -2,6 +2,7 @@ package com.dmonzonis.nookpendium
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
@@ -71,13 +72,15 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
                 super.onScrolled(recyclerView, dx, dy)
                 if (dy > 0 && fabFilters.isShown) {
                     fabFilters.hide()  // Hide on scroll down
+                    // Also hide submenu if it was open
+                    setFilterButtonsEnabled(false)
                 } else if (dy < 0 && !fabFilters.isShown) {
                     fabFilters.show()  // Reappear on scroll up
                 }
             }
         })
 
-        fabFilters.setOnClickListener { toggleFilterSubmenuVisibility() }
+        fabFilters.setOnClickListener { setFilterButtonsEnabled(!isFilterSubmenuOpen) }
         setFilterButtonsEnabled(false)
         fabFilterThisMonth.setOnClickListener { filterByThisMonth() }
         fabFilterClear.setOnClickListener {
@@ -96,26 +99,25 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
 
 
     private fun setFilterButtonsEnabled(enabled: Boolean) {
-        fabFilterThisMonth.isEnabled = enabled
-        fabFilterClear.isEnabled = enabled
-        fabSortBy.isEnabled = enabled
-    }
-
-    private fun toggleFilterSubmenuVisibility() {
-        if (isFilterSubmenuOpen) {
-            layoutFilterThisMonth.animate().alpha(0.0f)
-            layoutFilterClear.animate().alpha(0.0f)
-            layoutSortBy.animate().alpha(0.0f)
-            setFilterButtonsEnabled(false)
-            fabFilters.setImageResource(R.drawable.ic_search_black_24dp)
-        } else {
-            layoutFilterThisMonth.animate().alpha(1.0f)
-            layoutFilterClear.animate().alpha(1.0f)
-            layoutSortBy.animate().alpha(1.0f)
-            setFilterButtonsEnabled(true)
+        isFilterSubmenuOpen = if (enabled) {
             fabFilters.setImageResource(R.drawable.ic_clear_black_24dp)
+            fabFilterThisMonth.show()
+            fabFilterClear.show()
+            fabSortBy.show()
+            cardviewFilterThisMonth.visibility = View.VISIBLE
+            cardviewFilterClear.visibility = View.VISIBLE
+            cardviewSortBy.visibility = View.VISIBLE
+            true
+        } else {
+            cardviewFilterThisMonth.visibility = View.GONE
+            cardviewFilterClear.visibility = View.GONE
+            cardviewSortBy.visibility = View.GONE
+            fabFilterThisMonth.hide()
+            fabFilterClear.hide()
+            fabSortBy.hide()
+            fabFilters.setImageResource(R.drawable.ic_search_black_24dp)
+            false
         }
-        isFilterSubmenuOpen = !isFilterSubmenuOpen
     }
 
     private fun filterByThisMonth() {
