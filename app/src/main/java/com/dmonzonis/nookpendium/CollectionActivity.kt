@@ -66,6 +66,17 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
             }
         })
 
+        recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+                if (dy > 0 && fabFilters.isShown) {
+                    fabFilters.hide()  // Hide on scroll down
+                } else if (dy < 0 && !fabFilters.isShown) {
+                    fabFilters.show()  // Reappear on scroll up
+                }
+            }
+        })
+
         fabFilters.setOnClickListener { toggleFilterSubmenuVisibility() }
         setFilterButtonsEnabled(false)
         fabFilterThisMonth.setOnClickListener { filterByThisMonth() }
