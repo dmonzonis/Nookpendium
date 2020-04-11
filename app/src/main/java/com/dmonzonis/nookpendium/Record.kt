@@ -15,7 +15,8 @@ data class Record(
     val shadowSize: Int?,
     val imageId: Int,
     val availability: IntArray,
-    var captured: Boolean?
+    var captured: Boolean?,
+    var donated: Boolean?
 )
 
 class Recordset(private val totalRecords: List<Record>) {
@@ -126,7 +127,7 @@ class RecordXmlParser(private val context: Context) {
             imageId = R.drawable.blank_image
         }
 
-        return Record(id, name, price, time, location, shadowSize, imageId, availability, null)
+        return Record(id, name, price, time, location, shadowSize, imageId, availability, null, null)
     }
 
     private fun readText(parser: XmlPullParser): String {
