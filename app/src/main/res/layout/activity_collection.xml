@@ -16,7 +16,9 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabMode="fixed">
+            app:tabMode="fixed"
+            android:layout_marginBottom="5dp"
+            >
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabFish"

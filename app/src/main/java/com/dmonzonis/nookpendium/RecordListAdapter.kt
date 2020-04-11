@@ -42,18 +42,30 @@ class RecordListAdapter() :
         holder.itemView.text_name.text = record.name
         holder.itemView.text_price.text = record.price?.toString() ?: "?"
         holder.itemView.img_picture.setImageResource(record.imageId)
+        holder.itemView.text_time.text = record.time
+        holder.itemView.text_location.text = record.location
 
         // Get captured state from shared preferences if it hasn't been loaded yet
         if (record.captured == null) {
-            record.captured = sharedPrefs?.getBoolean(record.id, false) ?: false
+            record.captured = sharedPrefs?.getBoolean("captured_" + record.id, false) ?: false
+        }
+        if (record.donated == null) {
+            record.donated = sharedPrefs?.getBoolean("donated_" + record.id, false) ?: false
         }
         holder.itemView.checkbox_captured.isChecked = record.captured!!
+        holder.itemView.checkbox_donated.isChecked = record.donated!!
 
         // Set checkbox listener to save captured state to shared preferences
-        holder.checkBox.setOnClickListener {
-            val state = holder.checkBox.isChecked
+        holder.itemView.checkbox_captured.setOnClickListener {
+            val state = it.checkbox_captured.isChecked
             record.captured = state
-            sharedPrefs?.edit()?.putBoolean(record.id, state)?.apply()
+            sharedPrefs?.edit()?.putBoolean("captured_" + record.id, state)?.apply()
+        }
+
+        holder.itemView.checkbox_donated.setOnClickListener {
+            val state = it.checkbox_donated.isChecked
+            record.donated = state
+            sharedPrefs?.edit()?.putBoolean("donated_" + record.id, state)?.apply()
         }
     }
 }
