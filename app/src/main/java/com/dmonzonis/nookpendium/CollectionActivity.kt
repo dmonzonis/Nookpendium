@@ -1,5 +1,7 @@
 package com.dmonzonis.nookpendium
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -17,10 +19,11 @@ import java.util.*
 class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogListener {
     private lateinit var viewAdapter: RecordListAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
-    lateinit var drawerToggle: ActionBarDrawerToggle
+    private lateinit var drawerToggle: ActionBarDrawerToggle
     private var selectedGame: Int = R.string.game_acnh
-    lateinit var recordset: Recordset
+    private lateinit var recordset: Recordset
     private var isFilterSubmenuOpen = false
+    private lateinit var sharedPrefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +53,9 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
         recyclerView.layoutManager = viewManager
         recyclerView.adapter = viewAdapter
 
-        // Load default game assets (Fish, ACNH)
+        // Load default game assets (Fish) for the last used game (or ACNH if no last used game)
+        sharedPrefs = getSharedPreferences(getString(R.string.sharedPrefs), Context.MODE_PRIVATE)
+        selectedGame = sharedPrefs.getInt("selectedGame", R.string.game_acnh)
         loadGameAssets(tabLayout.getTabAt(0))
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
@@ -96,7 +101,6 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
     override fun onDialogPositiveClick(dialog: DialogFragment, token: String, descending: Boolean) {
         viewAdapter.setRecords(recordset.applySort(token, descending))
     }
-
 
     private fun setFilterButtonsEnabled(enabled: Boolean) {
         isFilterSubmenuOpen = if (enabled) {
@@ -161,5 +165,9 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
     private fun changeGame(game: Int) {
         selectedGame = game
         tabLayout.selectTab(tabLayout.getTabAt(0))
+        // Store selected game in persistent memory so this game is opened
+        // the next time the app is launched
+        // TODO: Also remember hemisphere, once we are allowed to change it
+        sharedPrefs.edit().putInt("selectedGame", game).apply()
     }
 }

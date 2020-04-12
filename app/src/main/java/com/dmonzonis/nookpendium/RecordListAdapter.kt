@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.record_row.view.*
 class RecordListAdapter() :
     RecyclerView.Adapter<RecordListAdapter.RecordHolder>() {
 
-    private val prefsFilename = "com.dmonzonis.nookpedium.sharedPrefs"
+    private lateinit var prefsFilename: String
     private var sharedPrefs: SharedPreferences? = null
     private var records: List<Record> = listOf()
 
@@ -24,6 +24,7 @@ class RecordListAdapter() :
             .inflate(R.layout.record_row, parent, false)
 
         // Initialize shared preferences
+        prefsFilename = parent.context.getString(R.string.sharedPrefs)
         sharedPrefs = parent.context.getSharedPreferences(prefsFilename, 0)
 
         return RecordHolder(inflatedView)
@@ -52,10 +53,7 @@ class RecordListAdapter() :
         holder.checkBox.setOnClickListener {
             val state = holder.checkBox.isChecked
             record.captured = state
-            val editor: SharedPreferences.Editor? = sharedPrefs?.edit()
-            editor?.putBoolean(record.id, state)
-            editor?.apply()
+            sharedPrefs?.edit()?.putBoolean(record.id, state)?.apply()
         }
     }
-
 }
