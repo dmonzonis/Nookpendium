@@ -25,4 +25,5 @@
     <string name="ascending">Ascending</string>
     <string name="descending">Descending</string>
     <string name="sort">Sort</string>
+    <string name="sharedPrefs">com.dmonzonis.nookpedium.sharedPrefs</string>
 </resources>
