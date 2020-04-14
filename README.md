@@ -10,7 +10,7 @@ In it's current state, the app only supports tracking critters for Animal Crossi
 
 --------------
 
-![](PromoImage (1).jpeg)  ![](PromoImage (2).jpeg) ![](PromoImage (3).jpeg)
+![](PromoImage(1).jpeg)  ![](PromoImage(2).jpeg) ![](PromoImage(3).jpeg)
 
 
 
@@ -21,5 +21,5 @@ In it's current state, the app only supports tracking critters for Animal Crossi
 The app can currently be installed in three different ways:
 
 - Either by downloading it from the Google Play Store
-- By downloading the latest stable version APK from [https://github.com/dmonzonis/Nookpendium/releases](GitHub)
+- By downloading the latest stable version APK [here](https://github.com/dmonzonis/Nookpendium/releases/latest)
 - By cloning the repository and importing the project into Android Studio, then compiling the APK yourself (unstable)
