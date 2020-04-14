@@ -26,4 +26,12 @@
     <string name="descending">Descending</string>
     <string name="sort">Sort</string>
     <string name="sharedPrefs">com.dmonzonis.nookpendium.sharedPrefs</string>
+    <string name="about">About</string>
+    <string name="available_games">Available Games</string>
+    <string name="about_text">Nookpendium is a Free and Open Source application licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>,
+        active development of the app is open to anyone, anytime on <a href="https://github.com/dmonzonis/Nookpendium">GitHub</a>.
+        \n\nIn-Game assets and information were collected from the <a href="https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki">Animal Crossing Wiki</a>,
+        these assets belong to their respective copyright holders and are subject to the
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons Attribution-ShareAlike 3.0 Unported license</a>
+    </string>
 </resources>
