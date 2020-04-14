@@ -1,6 +1,7 @@
 package com.dmonzonis.nookpendium
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.MenuItem
@@ -42,6 +43,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
             when (it.itemId) {
                 R.id.miGameAcnh -> changeGame(R.string.game_acnh)
                 R.id.miGameAcnl -> changeGame(R.string.game_acnl)
+                R.id.miAbout -> startActivity(Intent(this, AboutActivity::class.java))
             }
             true
         }
