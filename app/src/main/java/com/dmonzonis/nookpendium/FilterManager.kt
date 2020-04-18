@@ -3,7 +3,7 @@ package com.dmonzonis.nookpendium
 import android.widget.CheckBox
 import java.util.*
 
-class FilterManager(private val activity: CollectionActivity) {
+class FilterManager(internal var fragment: CritterFragment) {
     // Array of currently active filters, which correspond to the IDs of the associated views
     private var activeFilters = mutableSetOf<Int>()
     var searchQuery: String = ""
@@ -17,7 +17,7 @@ class FilterManager(private val activity: CollectionActivity) {
                 activeFilters.remove(id)
             }
 
-            activity.recomputeFilters()
+            fragment.recomputeFilters()
         }
     }
 

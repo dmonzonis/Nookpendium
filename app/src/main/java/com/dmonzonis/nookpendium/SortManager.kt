@@ -3,7 +3,7 @@ package com.dmonzonis.nookpendium
 import android.widget.ImageView
 import android.widget.LinearLayout
 
-class SortManager(private val activity: CollectionActivity) {
+class SortManager(internal var fragment: CritterFragment) {
     private var currentSort: Int? = null
     private var descending: Boolean = false
     private var imageViewMap = mutableMapOf<Int, ImageView>()
@@ -32,7 +32,7 @@ class SortManager(private val activity: CollectionActivity) {
                 setImageOnId(id, sortOrderImageResource())
             }
 
-            activity.recomputeFilters()
+            fragment.recomputeFilters()
         }
     }
 
