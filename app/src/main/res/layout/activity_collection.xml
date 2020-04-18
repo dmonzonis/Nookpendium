@@ -41,8 +41,6 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/tabLayout" />
 
-        <include layout="@layout/filter_fab_submenu" />
-
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
