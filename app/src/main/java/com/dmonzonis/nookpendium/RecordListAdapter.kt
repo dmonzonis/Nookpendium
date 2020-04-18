@@ -24,7 +24,7 @@ class RecordListAdapter() :
             .inflate(R.layout.record_row, parent, false)
 
         // Initialize shared preferences
-        prefsFilename = parent.context.getString(R.string.sharedPrefs)
+        prefsFilename = parent.context.getString(R.string.shared_prefs)
         sharedPrefs = parent.context.getSharedPreferences(prefsFilename, 0)
 
         return RecordHolder(inflatedView)

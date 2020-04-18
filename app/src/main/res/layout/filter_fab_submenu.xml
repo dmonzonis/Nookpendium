@@ -8,111 +8,6 @@
     android:clipToPadding="false"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/layoutSortBy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="85dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardviewSortBy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="10dp">
-
-            <TextView
-                android:id="@+id/textSortBy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="@string/sortBy" />
-        </androidx.cardview.widget.CardView>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabSortBy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_sort_by_alpha_24px"
-            app:fabSize="mini" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layoutFilterThisMonth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="135dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardviewFilterThisMonth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="10dp">
-
-            <TextView
-                android:id="@+id/textFilterThisMonth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="@string/filterThisMonth" />
-        </androidx.cardview.widget.CardView>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabFilterThisMonth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_event_black_24dp"
-            app:fabSize="mini" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layoutFilterClear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="185dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardviewFilterClear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="10dp">
-
-            <TextView
-                android:id="@+id/textFilterClear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="4dp"
-                android:text="@string/filterClear" />
-        </androidx.cardview.widget.CardView>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabFilterClear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_restore_black_24dp"
-            app:fabSize="mini" />
-
-    </LinearLayout>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabFilters"
         android:layout_width="wrap_content"
@@ -122,7 +17,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:contentDescription="@string/filters"
+        android:contentDescription="@string/filter"
         android:src="@drawable/ic_search_black_24dp"
         app:borderWidth="0dp" />
 
