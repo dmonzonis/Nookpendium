@@ -162,6 +162,7 @@ class CollectionActivity : AppCompatActivity() {
     }
 
     private fun setUpSortManager() {
+        addSortField(R.id.sortById, R.string.id)
         addSortField(R.id.sortByName, R.string.name)
         addSortField(R.id.sortByPrice, R.string.price)
     }

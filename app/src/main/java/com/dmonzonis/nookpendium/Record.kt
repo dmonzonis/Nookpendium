@@ -39,11 +39,16 @@ class Recordset(private val totalRecords: List<Record>) {
             } else {
                 records.sortedBy { it.name }
             }
-            // Sort by price by default
-            else -> if (descending) {
+            R.id.sortByPrice -> if (descending) {
                 records.sortedByDescending { it.price }
             } else {
                 records.sortedBy { it.price }
+            }
+            // Sort by id by default
+            else ->if (descending) {
+                records.sortedByDescending { it.id.toInt() }
+            } else {
+                records.sortedBy { it.id.toInt() }
             }
         }
         return records

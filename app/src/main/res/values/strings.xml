@@ -35,4 +35,5 @@
     <string name="sorting_order">Sorting order</string>
     <string name="not_donated">Not donated</string>
     <string name="not_caught">Not caught</string>
+    <string name="id">ID</string>
 </resources>
