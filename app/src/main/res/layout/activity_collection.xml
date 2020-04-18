@@ -7,10 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".CollectionActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
@@ -41,7 +43,7 @@
 
         <include layout="@layout/filter_fab_submenu" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navGamesView"
@@ -52,42 +54,5 @@
         app:headerLayout="@layout/nav_games_header"
         app:menu="@menu/nav_games_menu" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navFilterMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="end"
-        android:fitsSystemWindows="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/filter"
-                android:textStyle="bold" />
-            <LinearLayout
-                android:id="@+id/filterContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sort"
-                android:textStyle="bold" />
-            <LinearLayout
-                android:id="@+id/sortContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-
-        </LinearLayout>
-    </com.google.android.material.navigation.NavigationView>
+    <include layout="@layout/filter_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
