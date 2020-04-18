@@ -32,9 +32,9 @@ class Recordset(private val totalRecords: List<Record>) {
         return applyFilter { month < it.availability.size && it.availability[month] == 1 }
     }
 
-    fun applySort(field: String, descending: Boolean): List<Record> {
-        records = when (field) {
-            "name" -> if (descending) {
+    fun applySort(sortId: Int, descending: Boolean): List<Record> {
+        records = when (sortId) {
+            R.id.sortByName -> if (descending) {
                 records.sortedByDescending { it.name }
             } else {
                 records.sortedBy { it.name }

@@ -4,27 +4,29 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
-import android.view.View
+import android.widget.CheckBox
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_collection.*
 import kotlinx.android.synthetic.main.filter_fab_submenu.*
 import java.io.InputStream
-import java.util.*
 
-class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogListener {
+class CollectionActivity : AppCompatActivity() {
     private lateinit var viewAdapter: RecordListAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
     private lateinit var drawerToggle: ActionBarDrawerToggle
     private var selectedGame: Int = R.string.game_acnh
     private lateinit var recordset: Recordset
-    private var isFilterSubmenuOpen = false
     private lateinit var sharedPrefs: SharedPreferences
+    var filterManager = FilterManager(this)
+    var sortManager = SortManager(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,8 +40,6 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         navGamesView.setNavigationItemSelectedListener {
-            // FIXME: If another tab other than 0 is selected when changing game, the data
-            // for what normally would be tab 0 will be put into whichever tab is active
             when (it.itemId) {
                 R.id.miGameAcnh -> changeGame(R.string.game_acnh)
                 R.id.miGameAcnl -> changeGame(R.string.game_acnl)
@@ -47,6 +47,9 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
             }
             true
         }
+
+        setUpFilterManager()
+        setUpSortManager()
 
         // Set up the recycler view
         viewManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -56,7 +59,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
         recyclerView.adapter = viewAdapter
 
         // Load default game assets (Fish) for the last used game (or ACNH if no last used game)
-        sharedPrefs = getSharedPreferences(getString(R.string.sharedPrefs), Context.MODE_PRIVATE)
+        sharedPrefs = getSharedPreferences(getString(R.string.shared_prefs), Context.MODE_PRIVATE)
         selectedGame = sharedPrefs.getInt("selectedGame", R.string.game_acnh)
         loadGameAssets(tabLayout.getTabAt(0))
 
@@ -71,6 +74,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 // TODO: Depending on hemisphere (set in settings), get the NH or SH xml file for ACNH
                 loadGameAssets(tab)
+                recomputeFilters()
             }
         })
 
@@ -79,64 +83,87 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
                 super.onScrolled(recyclerView, dx, dy)
                 if (dy > 0 && fabFilters.isShown) {
                     fabFilters.hide()  // Hide on scroll down
-                    // Also hide submenu if it was open
-                    setFilterButtonsEnabled(false)
                 } else if (dy < 0 && !fabFilters.isShown) {
                     fabFilters.show()  // Reappear on scroll up
                 }
             }
         })
-
-        fabFilters.setOnClickListener { setFilterButtonsEnabled(!isFilterSubmenuOpen) }
-        setFilterButtonsEnabled(false)
-        fabFilterThisMonth.setOnClickListener { filterByThisMonth() }
-        fabFilterClear.setOnClickListener {
-            recordset.restore()
-            viewAdapter.setRecords(recordset.records)
-        }
-        fabSortBy.setOnClickListener {
-            val sortByDialog = SortDialogFragment()
-            sortByDialog.show(supportFragmentManager, "sort_by")
-        }
     }
 
-    override fun onDialogPositiveClick(dialog: DialogFragment, token: String, descending: Boolean) {
-        viewAdapter.setRecords(recordset.applySort(token, descending))
+    // Create toolbar menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
-    private fun setFilterButtonsEnabled(enabled: Boolean) {
-        isFilterSubmenuOpen = if (enabled) {
-            fabFilters.setImageResource(R.drawable.ic_clear_black_24dp)
-            fabFilterThisMonth.show()
-            fabFilterClear.show()
-            fabSortBy.show()
-            cardviewFilterThisMonth.visibility = View.VISIBLE
-            cardviewFilterClear.visibility = View.VISIBLE
-            cardviewSortBy.visibility = View.VISIBLE
-            true
-        } else {
-            cardviewFilterThisMonth.visibility = View.GONE
-            cardviewFilterClear.visibility = View.GONE
-            cardviewSortBy.visibility = View.GONE
-            fabFilterThisMonth.hide()
-            fabFilterClear.hide()
-            fabSortBy.hide()
-            fabFilters.setImageResource(R.drawable.ic_search_black_24dp)
-            false
-        }
-    }
-
-    private fun filterByThisMonth() {
-        val currentMonth = Calendar.getInstance().get(Calendar.MONTH)
-        val records = recordset.applyFilterByMonth(currentMonth)
-        viewAdapter.setRecords(records)
+    // Restores the recordset to the original, computes all active filters
+    // and the current sorting on it, and then updates the view adapter to use the new
+    // recordset
+    fun recomputeFilters() {
+        recordset.restore()
+        // First apply all filters, and then sort the resulting recordset
+        filterManager.applyFilters(recordset)
+        sortManager.applySort(recordset)
+        viewAdapter.setRecords(recordset.records)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (drawerToggle.onOptionsItemSelected(item)) {
-            return true
+        // Close all drawers before to avoid having multiple drawers opening on top of each other
+        closeAllDrawers()
+        return if (drawerToggle.onOptionsItemSelected(item)) {
+            true
+        } else when (item?.itemId) {
+            R.id.miFilterButton -> {
+                if (drawerLayout.isDrawerOpen(navFilterMenu))
+                    drawerLayout.closeDrawer(navFilterMenu)
+                else
+                    drawerLayout.openDrawer(navFilterMenu)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
-        return super.onOptionsItemSelected(item)
+    }
+
+    private fun closeAllDrawers() {
+        drawerLayout.closeDrawer(navGamesView)
+        drawerLayout.closeDrawer(navFilterMenu)
+    }
+
+    private fun addFilterField(id: Int, stringId: Int) {
+        // Add filter checkbox view
+        var checkboxView = layoutInflater.inflate(R.layout.filter_checkbox, navFilterMenu, false)
+        checkboxView.id = id
+        filterContainer.addView(checkboxView)
+        var filterCheckbox = navFilterMenu.findViewById<CheckBox>(id)
+        filterCheckbox?.text = getString(stringId)
+
+        // Notify the controller of the new filter
+        if (filterCheckbox != null)
+            filterManager.addFilterCheckbox(filterCheckbox)
+    }
+
+    private fun addSortField(id: Int, stringId: Int) {
+        var sortItemLayout = layoutInflater.inflate(R.layout.sort_item, navFilterMenu, false)
+        sortItemLayout.id = id
+        sortContainer.addView(sortItemLayout)
+        var sortItem = navFilterMenu.findViewById<LinearLayout>(id)
+        var textSortBy = sortItem?.findViewById<TextView>(R.id.textSortBy)
+        textSortBy?.text = getString(stringId)
+
+        // Notify the controller of the new sort item
+        if (sortItem != null)
+            sortManager.addSortField(sortItem)
+    }
+
+    private fun setUpFilterManager() {
+        addFilterField(R.id.filterNotCaught, R.string.not_caught)
+        addFilterField(R.id.filterNotDonated, R.string.not_donated)
+        addFilterField(R.id.filterThisMonth, R.string.filter_this_month)
+    }
+
+    private fun setUpSortManager() {
+        addSortField(R.id.sortByName, R.string.name)
+        addSortField(R.id.sortByPrice, R.string.price)
     }
 
     private fun loadGameAssets(tab: TabLayout.Tab?) {
@@ -161,7 +188,7 @@ class CollectionActivity : AppCompatActivity(), SortDialogFragment.SortDialogLis
         }
         val inputStream: InputStream = assets.open(filePath)
         recordset = RecordXmlParser(this).parse(inputStream)
-        viewAdapter.setRecords(recordset.records)
+        recomputeFilters()
     }
 
     private fun changeGame(game: Int) {

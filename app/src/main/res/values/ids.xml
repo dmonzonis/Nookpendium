@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="filterNotCaught" type="id" />
+    <item name="filterNotDonated" type="id" />
+    <item name="filterThisMonth" type="id" />
+    <item name="sortByName" type="id" />
+    <item name="sortByPrice" type="id" />
+</resources>

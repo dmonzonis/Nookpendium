@@ -14,10 +14,8 @@
     <string name="acnl_fish_path">acnl/fish.xml</string>
     <string name="acnl_bugs_path">acnl/bugs.xml</string>
     <string name="acnl_underwater_path">acnl/underwater.xml</string>
-    <string name="filters">Filters</string>
-    <string name="filterThisMonth">Show available this month</string>
-    <string name="filterClear">Clear all filters</string>
-    <string name="sortBy">Sort by...</string>
+    <string name="filter">Filter</string>
+    <string name="filter_this_month">Available this month</string>
     <string name="sortByMessage">Select field to sort by</string>
     <string name="name">Name</string>
     <string name="price">Price</string>
@@ -25,7 +23,7 @@
     <string name="ascending">Ascending</string>
     <string name="descending">Descending</string>
     <string name="sort">Sort</string>
-    <string name="sharedPrefs">com.dmonzonis.nookpendium.sharedPrefs</string>
+    <string name="shared_prefs">com.dmonzonis.nookpendium.sharedPrefs</string>
     <string name="about">About</string>
     <string name="available_games">Available Games</string>
     <string name="about_text">Nookpendium is a Free and Open Source application licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>,
@@ -34,4 +32,7 @@
         these assets belong to their respective copyright holders and are subject to the
         <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons Attribution-ShareAlike 3.0 Unported license</a>
     </string>
+    <string name="sorting_order">Sorting order</string>
+    <string name="not_donated">Not donated</string>
+    <string name="not_caught">Not caught</string>
 </resources>

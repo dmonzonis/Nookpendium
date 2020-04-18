@@ -16,9 +16,8 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabMode="fixed"
             android:layout_marginBottom="5dp"
-            >
+            app:tabMode="fixed">
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tabFish"
@@ -52,4 +51,43 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_games_header"
         app:menu="@menu/nav_games_menu" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navFilterMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/filterContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sort"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/sortContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
 </androidx.drawerlayout.widget.DrawerLayout>
