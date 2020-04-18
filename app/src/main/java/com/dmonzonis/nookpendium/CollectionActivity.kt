@@ -9,19 +9,19 @@ import android.view.MenuItem
 import android.widget.CheckBox
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_collection.*
 import kotlinx.android.synthetic.main.filter_fab_submenu.*
+import kotlinx.android.synthetic.main.filter_menu.*
+import kotlinx.android.synthetic.main.toolbar.*
 import java.io.InputStream
 
 class CollectionActivity : AppCompatActivity() {
     private lateinit var viewAdapter: RecordListAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
-    private lateinit var drawerToggle: ActionBarDrawerToggle
     private var selectedGame: Int = R.string.game_acnh
     private lateinit var recordset: Recordset
     private lateinit var sharedPrefs: SharedPreferences
@@ -31,11 +31,6 @@ class CollectionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_collection)
-
-        // Initialize the navigation drawer toggle
-        drawerToggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
-        drawerLayout.addDrawerListener(drawerToggle)
-        drawerToggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
@@ -88,12 +83,14 @@ class CollectionActivity : AppCompatActivity() {
                 }
             }
         })
-    }
 
-    // Create toolbar menu
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.toolbar_menu, menu)
-        return super.onCreateOptionsMenu(menu)
+        toolbar.inflateMenu(R.menu.toolbar_menu)
+        setSupportActionBar(toolbar)
+        supportActionBar!!.apply {
+            setDisplayShowTitleEnabled(false)
+            setDisplayHomeAsUpEnabled(true)
+            setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp)
+        }
     }
 
     // Restores the recordset to the original, computes all active filters
@@ -107,34 +104,32 @@ class CollectionActivity : AppCompatActivity() {
         viewAdapter.setRecords(recordset.records)
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         // Close all drawers before to avoid having multiple drawers opening on top of each other
         closeAllDrawers()
-        return if (drawerToggle.onOptionsItemSelected(item)) {
-            true
-        } else when (item?.itemId) {
-            R.id.miFilterButton -> {
-                if (drawerLayout.isDrawerOpen(navFilterMenu))
-                    drawerLayout.closeDrawer(navFilterMenu)
-                else
-                    drawerLayout.openDrawer(navFilterMenu)
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
+        when (item?.itemId) {
+            android.R.id.home -> drawerLayout.openDrawer(navGamesView)
+            R.id.miFilterButton -> drawerLayout.openDrawer(filterMenu)
         }
+        return true
     }
 
     private fun closeAllDrawers() {
         drawerLayout.closeDrawer(navGamesView)
-        drawerLayout.closeDrawer(navFilterMenu)
+        drawerLayout.closeDrawer(filterMenu)
     }
 
     private fun addFilterField(id: Int, stringId: Int) {
         // Add filter checkbox view
-        var checkboxView = layoutInflater.inflate(R.layout.filter_checkbox, navFilterMenu, false)
+        var checkboxView = layoutInflater.inflate(R.layout.filter_checkbox, filterMenu, false)
         checkboxView.id = id
         filterContainer.addView(checkboxView)
-        var filterCheckbox = navFilterMenu.findViewById<CheckBox>(id)
+        var filterCheckbox = filterMenu.findViewById<CheckBox>(id)
         filterCheckbox?.text = getString(stringId)
 
         // Notify the controller of the new filter
@@ -143,10 +138,10 @@ class CollectionActivity : AppCompatActivity() {
     }
 
     private fun addSortField(id: Int, stringId: Int) {
-        var sortItemLayout = layoutInflater.inflate(R.layout.sort_item, navFilterMenu, false)
+        var sortItemLayout = layoutInflater.inflate(R.layout.sort_item, filterMenu, false)
         sortItemLayout.id = id
         sortContainer.addView(sortItemLayout)
-        var sortItem = navFilterMenu.findViewById<LinearLayout>(id)
+        var sortItem = filterMenu.findViewById<LinearLayout>(id)
         var textSortBy = sortItem?.findViewById<TextView>(R.id.textSortBy)
         textSortBy?.text = getString(stringId)
 
