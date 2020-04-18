@@ -5,4 +5,5 @@
     <item name="filterThisMonth" type="id" />
     <item name="sortByName" type="id" />
     <item name="sortByPrice" type="id" />
+    <item name="sortById" type="id" />
 </resources>
