@@ -10,11 +10,11 @@ import android.widget.CheckBox
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_collection.*
-import kotlinx.android.synthetic.main.filter_fab_submenu.*
 import kotlinx.android.synthetic.main.filter_menu.*
 import kotlinx.android.synthetic.main.toolbar.*
 import java.io.InputStream
@@ -73,17 +73,6 @@ class CollectionActivity : AppCompatActivity() {
             }
         })
 
-        recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                super.onScrolled(recyclerView, dx, dy)
-                if (dy > 0 && fabFilters.isShown) {
-                    fabFilters.hide()  // Hide on scroll down
-                } else if (dy < 0 && !fabFilters.isShown) {
-                    fabFilters.show()  // Reappear on scroll up
-                }
-            }
-        })
-
         toolbar.inflateMenu(R.menu.toolbar_menu)
         setSupportActionBar(toolbar)
         supportActionBar!!.apply {
@@ -106,6 +95,21 @@ class CollectionActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar_menu, menu)
+        // Set up search action
+        var searchMenuItem = menu?.findItem(R.id.miSearch)
+        val searchView = searchMenuItem?.actionView as SearchView
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false  // Do nothing, search is done on text change
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filterManager.searchQuery = newText ?: ""
+                recomputeFilters()
+                return false
+            }
+
+        })
         return super.onCreateOptionsMenu(menu)
     }
 
