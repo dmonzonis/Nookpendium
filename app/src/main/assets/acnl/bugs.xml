@@ -1,25 +1,25 @@
 <RecordList>
   <Record>
     <id>401</id>
-    <name>Common butterfly</name>
+    <name>common_butterfly</name>
     <image>common_butterfly_hhd_icon.png</image>
     <price>90</price>
-    <location>Flying near flowers</location>
+    <location>flying_near_flowers</location>
     <time>4 AM - 7 PM</time>
     <availability>001111001000</availability>
   </Record>
   <Record>
     <id>402</id>
-    <name>Yellow butterfly</name>
+    <name>yellow_butterfly</name>
     <image>yellow_butterfly_hhd_icon.png</image>
     <price>90</price>
-    <location>Flying near flowers</location>
+    <location>flying_near_flowers</location>
     <time>6 AM - 4 PM</time>
     <availability>001111001000</availability>
   </Record>
   <Record>
     <id>403</id>
-    <name>Tiger butterfly</name>
+    <name>tiger_butterfly</name>
     <image>tiger_butterfly_hhd_icon.png</image>
     <price>160</price>
     <location>*</location>
@@ -28,7 +28,7 @@
   </Record>
   <Record>
     <id>404</id>
-    <name>Peacock butterfly</name>
+    <name>peacock_butterfly</name>
     <image>peacock_butterfly_hhd_icon.png</image>
     <price>220</price>
     <location>*</location>
@@ -37,613 +37,613 @@
   </Record>
   <Record>
     <id>405</id>
-    <name>Monarch butterfly</name>
+    <name>monarch_butterfly</name>
     <image>monarch_butterfly_hhd_icon.png</image>
     <price>140</price>
-    <location>Flying near flowers</location>
+    <location>flying_near_flowers</location>
     <time>9 AM - 5 PM</time>
     <availability>000000001110</availability>
   </Record>
   <Record>
     <id>406</id>
-    <name>Emperor butterfly</name>
+    <name>emperor_butterfly</name>
     <image>emperor_butterfly_hhd_icon.png</image>
     <price>2,500</price>
-    <location>Flying near flowers</location>
+    <location>flying_near_flowers</location>
     <time>8 PM - 7 AM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>407</id>
-    <name>Agrias butterfly</name>
+    <name>agrias_butterfly</name>
     <image>agrias_butterfly_hhd_icon.png</image>
     <price>3,000</price>
-    <location>Flying near flowers</location>
+    <location>flying_near_flowers</location>
     <time>8 AM - 5 PM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>408</id>
-    <name>Raja Brooke butterfly</name>
+    <name>raja_brooke_butterfly</name>
     <image>raja_brooke_hhd_icon.png</image>
     <price>2,500</price>
-    <location>Flying near river</location>
+    <location>flying_near_river</location>
     <time>8 AM - 5 PM</time>
     <availability>000011111000</availability>
   </Record>
   <Record>
     <id>409</id>
-    <name>Birdwing butterfly</name>
+    <name>birdwing_butterfly</name>
     <image>birdwing_hhd_icon.png</image>
     <price>4,000</price>
-    <location>Flying near flowers</location>
+    <location>flying_near_flowers</location>
     <time>8 AM - 4 PM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>410</id>
-    <name>Moth</name>
+    <name>moth</name>
     <image>moth_hhd_icon.png</image>
     <price>60</price>
-    <location>Flying near lights</location>
+    <location>flying_near_lights</location>
     <time>7 PM - 4 AM</time>
     <availability>000011111000</availability>
   </Record>
   <Record>
     <id>411</id>
-    <name>Oak silk moth</name>
+    <name>oak_silk_moth</name>
     <image>oak_silk_moth_hhd_icon.png</image>
     <price>1,200</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>7 PM - 4 AM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>412</id>
-    <name>Honeybee</name>
+    <name>honeybee</name>
     <image>honeybee_hhd_icon.png</image>
     <price>100</price>
-    <location>Flying near flowers</location>
+    <location>flying_near_flowers</location>
     <time>8 AM - 5 PM</time>
     <availability>001111100000</availability>
   </Record>
   <Record>
     <id>413</id>
-    <name>Bee</name>
+    <name>bee</name>
     <image>bee_hhd_icon.png</image>
     <price>2,500</price>
-    <location>In trees</location>
+    <location>in_trees</location>
     <time>All day</time>
     <availability>111111111111</availability>
   </Record>
   <Record>
     <id>414</id>
-    <name>Long locust</name>
+    <name>long_locust</name>
     <image>long_locust_hhd_icon.png</image>
     <price>200</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>8 AM - 7 PM</time>
     <availability>000011111110</availability>
   </Record>
   <Record>
     <id>415</id>
-    <name>Migratory locust</name>
+    <name>migratory_locust</name>
     <image>migratory_locust_hhd_icon.png</image>
     <price>600</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>8 AM - 7 PM</time>
     <availability>000000011110</availability>
   </Record>
   <Record>
     <id>416</id>
-    <name>Rice grasshopper</name>
+    <name>rice_grasshopper</name>
     <image>rice_grasshopper_hhd_icon.png</image>
     <price>400</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>8 AM - 7 PM</time>
     <availability>000000011110</availability>
   </Record>
   <Record>
     <id>417</id>
-    <name>Mantis</name>
+    <name>mantis</name>
     <image>mantis_hhd_icon.png</image>
     <price>430</price>
-    <location>On flowers</location>
+    <location>on_flowers</location>
     <time>8 AM - 5 PM</time>
     <availability>000111111110</availability>
   </Record>
   <Record>
     <id>418</id>
-    <name>Orchid mantis</name>
+    <name>orchid_mantis</name>
     <image>orchid_mantis_hhd_icon.png</image>
     <price>2,400</price>
-    <location>On white flowers</location>
+    <location>on_white_flowers</location>
     <time>8 AM - 5 PM</time>
     <availability>000111111110</availability>
   </Record>
   <Record>
     <id>419</id>
-    <name>Brown cicada</name>
+    <name>brown_cicada</name>
     <image>brown_cicada_hhd_icon.png</image>
     <price>200</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>8 AM - 5 PM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>420</id>
-    <name>Robust cicada</name>
+    <name>robust_cicada</name>
     <image>robust_cicada_hhd_icon.png</image>
     <price>300</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>8 AM - 5 PM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>421</id>
-    <name>Giant cicada</name>
+    <name>giant_cicada</name>
     <image>giant_cicada_hhd_icon.png</image>
     <price>500</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>8 AM - 5 PM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>422</id>
-    <name>Walker cicada</name>
+    <name>walker_cicada</name>
     <image>walker_cicada_hhd_icon.png</image>
     <price>400</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>8 AM - 5 PM</time>
     <availability>000000111000</availability>
   </Record>
   <Record>
     <id>423</id>
-    <name>Evening cicada</name>
+    <name>evening_cicada</name>
     <image>evening_cicada_hhd_icon.png</image>
     <price>550</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>4 PM - 7 PM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>424</id>
-    <name>Cicada shell</name>
+    <name>cicada_shell</name>
     <image>cicada_shell_hhd_icon.png</image>
     <price>100</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>All day</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>425</id>
-    <name>Lantern fly</name>
+    <name>lantern_fly</name>
     <image>lantern_fly_hhd_icon.png</image>
     <price>1,800</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>4 PM - 8 AM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>426</id>
-    <name>Red dragonfly</name>
+    <name>red_dragonfly</name>
     <image>red_dragonfly_hhd_icon.png</image>
     <price>80</price>
-    <location>Flying</location>
+    <location>flying</location>
     <time>8 AM - 7 PM</time>
     <availability>000000001110</availability>
   </Record>
   <Record>
     <id>427</id>
-    <name>Darner dragonfly</name>
+    <name>darner_dragonfly</name>
     <image>darner_dragonfly_hhd_icon.png</image>
     <price>200</price>
-    <location>Flying</location>
+    <location>flying</location>
     <time>8 AM - 5 PM</time>
     <availability>000001110000</availability>
   </Record>
   <Record>
     <id>428</id>
-    <name>Banded dragonfly</name>
+    <name>banded_dragonfly</name>
     <image>banded_dragonfly_hhd_icon.png</image>
     <price>4,500</price>
-    <location>Flying</location>
+    <location>flying</location>
     <time>8 AM - 5 PM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>429</id>
-    <name>Petaltail dragonfly</name>
+    <name>petaltail_dragonfly</name>
     <image>petaltail_dragonfly_hhd_icon.png</image>
     <price>8,000</price>
-    <location>Flying</location>
+    <location>flying</location>
     <time>5 PM - 7 PM</time>
     <availability>000000011100</availability>
   </Record>
   <Record>
     <id>430</id>
-    <name>Ant</name>
+    <name>ant</name>
     <image>ant_hhd_icon.png</image>
     <price>80</price>
-    <location>On rotten food</location>
+    <location>on_rotten_food</location>
     <time>All day</time>
     <availability>111111111111</availability>
   </Record>
   <Record>
     <id>431</id>
-    <name>Pondskater</name>
+    <name>pondskater</name>
     <image>pondskater_hhd_icon.png</image>
     <price>130</price>
-    <location>Swimming on river or pond</location>
+    <location>swimming_on_river_or_pond</location>
     <time>8 AM - 7 PM</time>
     <availability>000011111000</availability>
   </Record>
   <Record>
     <id>432</id>
-    <name>Diving beetle</name>
+    <name>diving_beetle</name>
     <image>diving_beetle_hhd_icon.png</image>
     <price>800</price>
-    <location>Swimming on river or pond</location>
+    <location>swimming_on_river_or_pond</location>
     <time>8 AM - 5 PM</time>
     <availability>000011111000</availability>
   </Record>
   <Record>
     <id>433</id>
-    <name>Stinkbug</name>
+    <name>stinkbug</name>
     <image>stink_bug_hhd_icon.png</image>
     <price>120</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>All day</time>
     <availability>000111111100</availability>
   </Record>
   <Record>
     <id>434</id>
-    <name>Snail</name>
+    <name>snail</name>
     <image>snail_hhd_icon.png</image>
     <price>250</price>
-    <location>(rain)</location>
+    <location>rain</location>
     <time>All day</time>
     <availability>000111111000</availability>
   </Record>
   <Record>
     <id>435</id>
-    <name>Cricket</name>
+    <name>cricket</name>
     <image>cricket_hhd_icon.png</image>
     <price>160</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>5 PM - 8 AM</time>
     <availability>000000001110</availability>
   </Record>
   <Record>
     <id>436</id>
-    <name>Bell cricket</name>
+    <name>bell_cricket</name>
     <image>bell_cricket_hhd_icon.png</image>
     <price>430</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>5 PM - 8 AM</time>
     <availability>000000001100</availability>
   </Record>
   <Record>
     <id>437</id>
-    <name>Grasshopper</name>
+    <name>grasshopper</name>
     <image>grasshopper_hhd_icon.png</image>
     <price>160</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>8 AM - 5 PM</time>
     <availability>000000111000</availability>
   </Record>
   <Record>
     <id>438</id>
-    <name>Mole cricket</name>
+    <name>mole_cricket</name>
     <image>mole_cricket_hhd_icon.png</image>
     <price>280</price>
-    <location>Underground</location>
+    <location>underground</location>
     <time>All day</time>
     <availability>111110000011</availability>
   </Record>
   <Record>
     <id>439</id>
-    <name>Walking leaf</name>
+    <name>walking_leaf</name>
     <image>walking_leaf_hhd_icon.png</image>
     <price>600</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>8 AM - 5 PM</time>
     <availability>000000111000</availability>
   </Record>
   <Record>
     <id>440</id>
-    <name>Walking stick</name>
+    <name>walking_stick</name>
     <image>walkingstick_hhd_icon.png</image>
     <price>600</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>4 AM - 7 PM</time>
     <availability>000000111110</availability>
   </Record>
   <Record>
     <id>441</id>
-    <name>Bagworm</name>
+    <name>bagworm</name>
     <image>bagworm_hhd_icon.png</image>
     <price>300</price>
-    <location>In trees</location>
+    <location>in_trees</location>
     <time>All day</time>
     <availability>110000000111</availability>
   </Record>
   <Record>
     <id>442</id>
-    <name>Ladybug</name>
+    <name>ladybug</name>
     <image>ladybug_hhd_icon.png</image>
     <price>200</price>
-    <location>On flowers</location>
+    <location>on_flowers</location>
     <time>8 AM - 5 PM</time>
     <availability>001111100100</availability>
   </Record>
   <Record>
     <id>443</id>
-    <name>Violin beetle</name>
+    <name>violin_beetle</name>
     <image>violin_beetle_hhd_icon.png</image>
     <price>260</price>
-    <location>Tree stumps</location>
+    <location>tree_stumps</location>
     <time>4 AM - 7 PM</time>
     <availability>000001001110</availability>
   </Record>
   <Record>
     <id>444</id>
-    <name>Longhorn beetle</name>
+    <name>longhorn_beetle</name>
     <image>longhorn_beetle_hhd_icon.png</image>
     <price>260</price>
-    <location>Tree stumps</location>
+    <location>tree_stumps</location>
     <time>11 PM - 7 PM</time>
     <availability>000000111000</availability>
   </Record>
   <Record>
     <id>445</id>
-    <name>Tiger beetle</name>
+    <name>tiger_beetle</name>
     <image>tiger_beetle_hhd_icon.png</image>
     <price>1,500</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>8 AM - 11 PM</time>
     <availability>001111111100</availability>
   </Record>
   <Record>
     <id>446</id>
-    <name>Dung beetle</name>
+    <name>dung_beetle</name>
     <image>dung_beetle_hhd_icon.png</image>
     <price>800</price>
-    <location>Snow balls</location>
+    <location>snow_balls</location>
     <time>5 PM - 8 AM</time>
     <availability>110000000001</availability>
   </Record>
   <Record>
     <id>447</id>
-    <name>Wharf roach</name>
+    <name>wharf_roach</name>
     <image>wharf_roach_hhd_icon.png</image>
     <price>200</price>
-    <location>On the beach</location>
+    <location>on_the_beach</location>
     <time>All day</time>
     <availability>111111111111</availability>
   </Record>
   <Record>
     <id>448</id>
-    <name>Hermit crab</name>
+    <name>hermit_crab</name>
     <image>hermit_crab_hhd_icon.png</image>
     <price>1,000</price>
-    <location>On the beach</location>
+    <location>on_the_beach</location>
     <time>7 PM - 8 AM</time>
     <availability>111111111111</availability>
   </Record>
   <Record>
     <id>449</id>
-    <name>Firefly</name>
+    <name>firefly</name>
     <image>firefly_hhd_icon.png</image>
     <price>300</price>
-    <location>Flying near river</location>
+    <location>flying_near_river</location>
     <time>7 PM - 4 AM</time>
     <availability>000001000000</availability>
   </Record>
   <Record>
     <id>450</id>
-    <name>Fruit beetle</name>
+    <name>fruit_beetle</name>
     <image>fruit_beetle_hhd_icon.png</image>
     <price>100</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>All day</time>
     <availability>000000111000</availability>
   </Record>
   <Record>
     <id>451</id>
-    <name>Scarab beetle</name>
+    <name>scarab_beetle</name>
     <image>scarab_beetle_hhd_icon.png</image>
     <price>6,000</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>11 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>452</id>
-    <name>Jewel beetle</name>
+    <name>jewel_beetle</name>
     <image>jewel_beetle_hhd_icon.png</image>
     <price>2,400</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>8 AM - 5 PM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>453</id>
-    <name>Miyama stag</name>
+    <name>miyama_stag</name>
     <image>miyama_stag_hhd_icon.png</image>
     <price>1,000</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>All day</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>454</id>
-    <name>Saw stag</name>
+    <name>saw_stag</name>
     <image>saw_stag_hhd_icon.png</image>
     <price>2,000</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>All day</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>455</id>
-    <name>Giant stag</name>
+    <name>giant_stag</name>
     <image>giant_stag_hhd_icon.png</image>
     <price>10,000</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>11 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>456</id>
-    <name>Rainbow stag</name>
+    <name>rainbow_stag</name>
     <image>rainbow_stag_hhd_icon.png</image>
     <price>10,000</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>457</id>
-    <name>Cyclommatus stag</name>
+    <name>cyclommatus_stag</name>
     <image>cyclommatus_hhd_icon.png</image>
     <price>8,000</price>
-    <location>On palm trees</location>
+    <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>458</id>
-    <name>Golden stag</name>
+    <name>golden_stag</name>
     <image>golden_stag_hhd_icon.png</image>
     <price>12,000</price>
-    <location>On palm trees</location>
+    <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
   </Record>
   <Record>
     <id>459</id>
-    <name>Horned dynastid</name>
+    <name>horned_dynastid</name>
     <image>horned_dynastid_hhd_icon.png</image>
     <price>1,350</price>
-    <location>On trees</location>
+    <location>on_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
   <Record>
     <id>460</id>
-    <name>Horned atlas</name>
+    <name>horned_atlas</name>
     <image>horned_atlas_hhd_icon.png</image>
     <price>8,000</price>
-    <location>On palm trees</location>
+    <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
   </Record>
   <Record>
     <id>461</id>
-    <name>Horned elephant</name>
+    <name>horned_elephant</name>
     <image>horned_elephant_hhd_icon.png</image>
     <price>8,000</price>
-    <location>On palm trees</location>
+    <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
   </Record>
   <Record>
     <id>462</id>
-    <name>Horned hercules</name>
+    <name>horned_hercules</name>
     <image>horned_hercules_hhd_icon.png</image>
     <price>12,000</price>
-    <location>On palm trees</location>
+    <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
   </Record>
   <Record>
     <id>463</id>
-    <name>Goliath beetle</name>
+    <name>goliath_beetle</name>
     <image>goliath_beetle_hhd_icon.png</image>
     <price>6,000</price>
-    <location>On palm trees</location>
+    <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>464</id>
-    <name>Flea</name>
+    <name>flea</name>
     <image>flea_hhd_icon.png</image>
     <price>70</price>
-    <location>On villagers</location>
+    <location>on_villagers</location>
     <time>All day</time>
     <availability>001111111110</availability>
   </Record>
   <Record>
     <id>465</id>
-    <name>Pill bug</name>
+    <name>pill_bug</name>
     <image>pill_bug_hhd_icon.png</image>
     <price>250</price>
-    <location>Under rocks</location>
+    <location>under_rocks</location>
     <time>All day</time>
     <availability>111111111111</availability>
   </Record>
   <Record>
     <id>466</id>
-    <name>Mosquito</name>
+    <name>mosquito</name>
     <image>mosquito_hhd_icon.png</image>
     <price>130</price>
-    <location>Flying</location>
+    <location>flying</location>
     <time>5 PM - 4 AM</time>
     <availability>000001111000</availability>
   </Record>
   <Record>
     <id>467</id>
-    <name>Fly</name>
+    <name>fly</name>
     <image>fly_hhd_icon.png</image>
     <price>60</price>
-    <location>Flying near trash</location>
+    <location>flying_near_trash</location>
     <time>All day</time>
     <availability>111111111111</availability>
   </Record>
   <Record>
     <id>468</id>
-    <name>House centipede</name>
+    <name>house_centipede</name>
     <image>house_centipede_hhd_icon.png</image>
     <price>250</price>
-    <location>Under rocks</location>
+    <location>under_rocks</location>
     <time>7 PM - 8 AM</time>
     <availability>000000011100</availability>
   </Record>
   <Record>
     <id>469</id>
-    <name>Centipede</name>
+    <name>centipede</name>
     <image>centipede_hhd_icon.png</image>
     <price>300</price>
-    <location>Under rocks</location>
+    <location>under_rocks</location>
     <time>4 PM - 11 PM</time>
     <availability>110001111111</availability>
   </Record>
   <Record>
     <id>470</id>
-    <name>Spider</name>
+    <name>spider</name>
     <image>spider_hhd_icon.png</image>
     <price>300</price>
-    <location>In trees</location>
+    <location>in_trees</location>
     <time>All day</time>
     <availability>001111111100</availability>
   </Record>
   <Record>
     <id>471</id>
-    <name>Tarantula</name>
+    <name>tarantula</name>
     <image>tarantula_hhd_icon.png</image>
     <price>8,000</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>7 PM - 4 AM</time>
     <availability>000001110000</availability>
   </Record>
   <Record>
     <id>472</id>
-    <name>Scorpion</name>
+    <name>scorpion</name>
     <image>scorpion_hhd_icon.png</image>
     <price>8,000</price>
-    <location>On the ground</location>
+    <location>on_the_ground</location>
     <time>7 PM - 4 AM</time>
     <availability>000000111000</availability>
   </Record>

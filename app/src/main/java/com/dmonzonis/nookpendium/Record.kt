@@ -8,10 +8,10 @@ import java.io.InputStream
 
 data class Record(
     val id: String,
-    val name: String,
+    val name: Int,
     val price: Int?,
     val time: String,
-    val location: String,
+    val location: Int,
     val shadowSize: Int?,
     val imageId: Int,
     val availability: IntArray,
@@ -19,7 +19,7 @@ data class Record(
     var donated: Boolean?
 )
 
-class Recordset(private val totalRecords: List<Record>) {
+class Recordset(private val totalRecords: List<Record>, private val context: Context) {
     // Current subset of records after having applied filters/sorting
     var records = totalRecords
 
@@ -31,9 +31,9 @@ class Recordset(private val totalRecords: List<Record>) {
     fun applySort(sortId: Int, descending: Boolean): List<Record> {
         records = when (sortId) {
             R.id.sortByName -> if (descending) {
-                records.sortedByDescending { it.name }
+                records.sortedByDescending { context.getString(it.name) }
             } else {
-                records.sortedBy { it.name }
+                records.sortedBy { context.getString(it.name) }
             }
             R.id.sortByPrice -> if (descending) {
                 records.sortedByDescending { it.price }
@@ -41,7 +41,7 @@ class Recordset(private val totalRecords: List<Record>) {
                 records.sortedBy { it.price }
             }
             // Sort by id by default
-            else ->if (descending) {
+            else -> if (descending) {
                 records.sortedByDescending { it.id.toInt() }
             } else {
                 records.sortedBy { it.id.toInt() }
@@ -66,7 +66,7 @@ class RecordXmlParser(private val context: Context) {
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false)
             parser.setInput(it, null)
             parser.nextTag()
-            return Recordset(readAllRecords(parser))
+            return Recordset(readAllRecords(parser), context)
         }
     }
 
@@ -87,11 +87,11 @@ class RecordXmlParser(private val context: Context) {
     private fun readRecord(parser: XmlPullParser): Record {
         parser.require(XmlPullParser.START_TAG, ns, "Record")
         var id = ""
-        var name = ""
+        var name = R.string.unknown
         var imageFilename = ""
         var price: Int? = null
         var time = ""
-        var location = ""
+        var location = R.string.unknown
         var shadowSize: Int? = null
         var availability = IntArray(12)
 
@@ -103,10 +103,10 @@ class RecordXmlParser(private val context: Context) {
 
             when (parser.name) {
                 "id" -> id = readText(parser)
-                "name" -> name = readText(parser)
+                "name" -> name = readStringIdentifier(parser)
                 "price" -> price = readText(parser).replace(",", "").toIntOrNull()
                 "time" -> time = readText(parser)
-                "location" -> location = readText(parser)
+                "location" -> location = readStringIdentifier(parser)
                 "shadow_size" -> shadowSize = readText(parser).toIntOrNull()
                 "image" -> imageFilename = readText(parser)
                 "availability" -> {
@@ -128,7 +128,18 @@ class RecordXmlParser(private val context: Context) {
             imageId = R.drawable.blank_image
         }
 
-        return Record(id, name, price, time, location, shadowSize, imageId, availability, null, null)
+        return Record(
+            id,
+            name,
+            price,
+            time,
+            location,
+            shadowSize,
+            imageId,
+            availability,
+            null,
+            null
+        )
     }
 
     private fun readText(parser: XmlPullParser): String {
@@ -138,5 +149,12 @@ class RecordXmlParser(private val context: Context) {
             parser.nextTag()
         }
         return result
+    }
+
+    private fun readStringIdentifier(parser: XmlPullParser): Int {
+        var resource = context.resources.getIdentifier(readText(parser), "string", "com.dmonzonis.nookpendium")
+        if (resource == 0)  // 0 is an invalid resource, it means it was not found
+            resource = R.string.unknown
+        return resource
     }
 }
