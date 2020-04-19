@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nookpendium</string>
+    <string name="fish">Peces</string>
+    <string name="bugs">Insectos</string>
+    <string name="underwater">Criaturas submarinas</string>
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+    <string name="filter">Filtro</string>
+    <string name="filter_this_month">Disponible este mes</string>
+    <string name="name">Nombre</string>
+    <string name="price">Precio</string>
+    <string name="order">Orden</string>
+    <string name="sort">Orden</string>
+    <string name="about">Acerca de</string>
+    <string name="available_games">Juegos Disponibles</string>
+    <string name="not_donated">No donado</string>
+    <string name="not_caught">No atrapado</string>
+    <string name="id">ID</string>
+    <string name="about_text">Nookpendium es una aplicación libre y de código abierto bajo la licencia <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>,
+        el desarrollo de la aplicación está abierto a cualquiera, en todo momento en <a href="https://github.com/dmonzonis/Nookpendium">GitHub</a>.
+        \n\nLas imágenes e información se coleccionaron de la página <a href="https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki">Animal Crossing Wiki</a>,
+        estas imágenes pertenecen a sus respectivos dueños de copyright y están sujetas a la licencia
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons Attribution-ShareAlike 3.0 Unported</a>
+    </string>
+    <string name="sorting_order">Sentido de ordenación</string>
+    <string name="flying">Volando</string>
+    <string name="flying_by_hybrid_flowers">Volando sobre flores híbridas</string>
+    <string name="flying_by_light">Volando cerca de la luz</string>
+    <string name="on_the_ground">En el suelo</string>
+    <string name="on_flowers">Sobre flores</string>
+    <string name="on_flowers_white">Sobre flores (blancas)</string>
+    <string name="shaking_trees">Agitando árboles</string>
+    <string name="on_trees">Sobre árboles</string>
+    <string name="underground">Bajo tierra</string>
+    <string name="on_ponds_and_rivers">En estanques y ríos</string>
+    <string name="on_tree_stumps">En el tocón de árboles</string>
+    <string name="on_the_ground_rolling_snowballs">Suelo (rodando bolas de nieve)</string>
+    <string name="on_trees_coconut">Sobre árboles (cocoteros)</string>
+    <string name="under_trees_disguised_as_leafs">Bajo árboles disfrazados de hoja</string>
+    <string name="on_rotten_food">Sobre comida podrida</string>
+    <string name="beach_disguised_as_shells">Playa disfrazados de conchas</string>
+    <string name="on_beach_rocks">Sobre las rocas de la playa</string>
+    <string name="on_trash_items">Sobre objetos basura</string>
+    <string name="villagers_heads">En la cabeza de los habitantes</string>
+    <string name="on_rocks_rain">Sobre rocas (lluvia)</string>
+    <string name="hitting_rocks">Golpeando rocas</string>
+    <string name="river">Río</string>
+    <string name="pond">Estanque</string>
+    <string name="river_clifftop">Río (acantilado)</string>
+    <string name="river_clifftop_pond">Río (acantilado), Estanque</string>
+    <string name="river_mouth">Desembocadura del río</string>
+    <string name="sea">Mar</string>
+    <string name="pier">Muelle</string>
+    <string name="sea_while_raining">Mar (mientras llueve)</string>
+    <string name="flying_near_flowers">Volando (cerca de flores)</string>
+    <string name="flying_near_river">Volando (cerca del río)</string>
+    <string name="flying_near_lights">Volando (cerca de luces)</string>
+    <string name="in_trees">En árboles</string>
+    <string name="on_white_flowers">En flores blancas</string>
+    <string name="swimming_on_river_or_pond">Nadando en río o estanque</string>
+    <string name="rain">Lluvia</string>
+    <string name="tree_stumos">Tocón de árboles</string>
+    <string name="snow_balls">Bolas de nieve</string>
+    <string name="on_the_beach">En la playa</string>
+    <string name="on_palm_trees">En palmeras</string>
+    <string name="under_rocks">Bajo rocas</string>
+    <string name="flying_near_trash">Volando cerca de basura</string>
+    <string name="lake">Lago</string>
+    <string name="waterfall">Cascada</string>
+    <string name="ocean">Océano</string>
+    <string name="island">Isla</string>
+    <string name="unknown">Desconocido</string>
+    <string name="rain_or_snow">Lluvia o nieve</string>
+    <string name="while_raining">Mientras llueve</string>
+</resources>

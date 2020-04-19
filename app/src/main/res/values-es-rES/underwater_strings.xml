@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="seaweed">Alga wakame</string>
+    <string name="sea_grapes">Uva de mar</string>
+    <string name="sea_urchin">Erizo de mar</string>
+    <string name="acorn_barnacle">Bellota de mar</string>
+    <string name="oyster">Ostra</string>
+    <string name="turban_shell">Caracola espinosa</string>
+    <string name="abalone">Abulón</string>
+    <string name="ear_shell">Oreja de mar</string>
+    <string name="clam">Almeja oriental</string>
+    <string name="pearl_oyster">Ostra perlera</string>
+    <string name="scallop">Vieira</string>
+    <string name="sea_anemone">Anémona</string>
+    <string name="sea_star">Estrella de mar</string>
+    <string name="sea_cucumber">Pepino de mar</string>
+    <string name="sea_slug">Babosa de mar</string>
+    <string name="flatworm">Gusano políclado</string>
+    <string name="mantis_shrimp">Langosta mantis</string>
+    <string name="sweet_shrimp">Camarón boreal</string>
+    <string name="tiger_prawn">Langostino tigre</string>
+    <string name="spiny_lobster">Langosta espinosa</string>
+    <string name="lobster">Bogavante</string>
+    <string name="snow_crab">Cangrejo de nieve</string>
+    <string name="horsehair_crab">Cangrejo peludo</string>
+    <string name="red_king_crab">Cangrejo boreal</string>
+    <string name="spider_crab">Cangrejo gig. Jap.</string>
+    <string name="octopus">Pulpo</string>
+    <string name="spotted_garden_eel">Anguila jardinera</string>
+    <string name="chambered_nautilus">Nautilo</string>
+    <string name="horseshoe_crab">Cangrejo herradura</string>
+    <string name="giant_isopod">Isópodo gigante</string>
+</resources>
