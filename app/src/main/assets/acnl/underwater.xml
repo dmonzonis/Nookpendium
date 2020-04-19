@@ -1,7 +1,7 @@
 <RecordList>
   <Record>
     <id>501</id>
-    <name>Seaweed</name>
+    <name>seaweed</name>
     <image>seaweed_hhd_icon.png</image>
     <price>200</price>
     <shadow_size>Large</shadow_size>
@@ -10,7 +10,7 @@
   </Record>
   <Record>
     <id>502</id>
-    <name>Sea grapes</name>
+    <name>sea_grapes</name>
     <image>sea_grapes_hhd_icon.png</image>
     <price>600</price>
     <shadow_size>Small</shadow_size>
@@ -19,7 +19,7 @@
   </Record>
   <Record>
     <id>503</id>
-    <name>Sea urchin</name>
+    <name>sea_urchin</name>
     <image>sea_urchin_hhd_icon.png</image>
     <price>800</price>
     <shadow_size>Small</shadow_size>
@@ -28,7 +28,7 @@
   </Record>
   <Record>
     <id>504</id>
-    <name>Acorn barnacle</name>
+    <name>acorn_barnacle</name>
     <image>acorn_barnacle_hhd_icon.png</image>
     <price>200</price>
     <shadow_size>Very small</shadow_size>
@@ -37,7 +37,7 @@
   </Record>
   <Record>
     <id>505</id>
-    <name>Oyster</name>
+    <name>oyster</name>
     <image>oyster_hhd_icon.png</image>
     <price>400</price>
     <shadow_size>Small</shadow_size>
@@ -46,7 +46,7 @@
   </Record>
   <Record>
     <id>506</id>
-    <name>Turban shell</name>
+    <name>turban_shell</name>
     <image>turban_shell_hhd_icon.png</image>
     <price>300</price>
     <shadow_size>Small</shadow_size>
@@ -55,7 +55,7 @@
   </Record>
   <Record>
     <id>507</id>
-    <name>Abalone</name>
+    <name>abalone</name>
     <image>abalone_hhd_icon.png</image>
     <price>400</price>
     <shadow_size>Medium</shadow_size>
@@ -64,7 +64,7 @@
   </Record>
   <Record>
     <id>508</id>
-    <name>Ear shell</name>
+    <name>ear_shell</name>
     <image>ear_shell_hhd_icon.png</image>
     <price>300</price>
     <shadow_size>Small</shadow_size>
@@ -73,7 +73,7 @@
   </Record>
   <Record>
     <id>509</id>
-    <name>Clam</name>
+    <name>clam</name>
     <image>clam_hhd_icon.png</image>
     <price>300</price>
     <shadow_size>Small</shadow_size>
@@ -82,7 +82,7 @@
   </Record>
   <Record>
     <id>510</id>
-    <name>Pearl oyster</name>
+    <name>pearl_oyster</name>
     <image>pearl_oyster_hhd_icon.png</image>
     <price>1,600</price>
     <shadow_size>Small</shadow_size>
@@ -91,7 +91,7 @@
   </Record>
   <Record>
     <id>511</id>
-    <name>Scallop</name>
+    <name>scallop</name>
     <image>scallop_hhd_icon.png</image>
     <price>1,000</price>
     <shadow_size>Medium</shadow_size>
@@ -100,7 +100,7 @@
   </Record>
   <Record>
     <id>512</id>
-    <name>Sea anemone</name>
+    <name>sea_anemone</name>
     <image>sea_anemone_hhd_icon.png</image>
     <price>100</price>
     <shadow_size>Medium</shadow_size>
@@ -109,7 +109,7 @@
   </Record>
   <Record>
     <id>513</id>
-    <name>Sea star</name>
+    <name>sea_star</name>
     <image>sea_star_hhd_icon.png</image>
     <price>100</price>
     <shadow_size>Small</shadow_size>
@@ -118,7 +118,7 @@
   </Record>
   <Record>
     <id>514</id>
-    <name>Sea cucumber</name>
+    <name>sea_cucumber</name>
     <image>sea_cucumber_hhd_icon.png</image>
     <price>150</price>
     <shadow_size>Medium</shadow_size>
@@ -127,7 +127,7 @@
   </Record>
   <Record>
     <id>515</id>
-    <name>Sea slug</name>
+    <name>sea_slug</name>
     <image>sea_slug_hhd_icon.png</image>
     <price>200</price>
     <shadow_size>Small</shadow_size>
@@ -136,7 +136,7 @@
   </Record>
   <Record>
     <id>516</id>
-    <name>Flatworm</name>
+    <name>flatworm</name>
     <image>flatworm_hhd_icon.png</image>
     <price>200</price>
     <shadow_size>Small</shadow_size>
@@ -145,7 +145,7 @@
   </Record>
   <Record>
     <id>517</id>
-    <name>Mantis shrimp</name>
+    <name>mantis_shrimp</name>
     <image>mantis_shrimp_hhd_icon.png</image>
     <price>1,250</price>
     <shadow_size>Small</shadow_size>
@@ -154,7 +154,7 @@
   </Record>
   <Record>
     <id>518</id>
-    <name>Sweet shrimp</name>
+    <name>sweet_shrimp</name>
     <image>sweet_shrimp_hhd_icon.png</image>
     <price>650</price>
     <shadow_size>Small</shadow_size>
@@ -163,7 +163,7 @@
   </Record>
   <Record>
     <id>519</id>
-    <name>Tiger prawn</name>
+    <name>tiger_prawn</name>
     <image>tiger_prawn_hhd_icon.png</image>
     <price>1,600</price>
     <shadow_size>Small</shadow_size>
@@ -172,7 +172,7 @@
   </Record>
   <Record>
     <id>520</id>
-    <name>Spiny lobster</name>
+    <name>spiny_lobster</name>
     <image>spiny_lobster_hhd_icon.png</image>
     <price>3,000</price>
     <shadow_size>Large</shadow_size>
@@ -181,7 +181,7 @@
   </Record>
   <Record>
     <id>521</id>
-    <name>Lobster</name>
+    <name>lobster</name>
     <image>lobster_hhd_icon.png</image>
     <price>2,500</price>
     <shadow_size>Large</shadow_size>
@@ -190,7 +190,7 @@
   </Record>
   <Record>
     <id>522</id>
-    <name>Snow crab</name>
+    <name>snow_crab</name>
     <image>snow_crab_hhd_icon.png</image>
     <price>4,000</price>
     <shadow_size>Large</shadow_size>
@@ -199,7 +199,7 @@
   </Record>
   <Record>
     <id>523</id>
-    <name>Horsehair crab</name>
+    <name>horsehair_crab</name>
     <image>horsehair_crab_hhd_icon.png</image>
     <price>4,000</price>
     <shadow_size>Medium</shadow_size>
@@ -208,7 +208,7 @@
   </Record>
   <Record>
     <id>524</id>
-    <name>Red king crab</name>
+    <name>red_king_crab</name>
     <image>red_king_crab_hhd_icon.png</image>
     <price>6,000</price>
     <shadow_size>Large</shadow_size>
@@ -217,7 +217,7 @@
   </Record>
   <Record>
     <id>525</id>
-    <name>Spider crab</name>
+    <name>spider_crab</name>
     <image>spider_crab_hhd_icon.png</image>
     <price>10,000</price>
     <shadow_size>Huge</shadow_size>
@@ -226,7 +226,7 @@
   </Record>
   <Record>
     <id>526</id>
-    <name>Octopus</name>
+    <name>octopus</name>
     <image>octopus_hhd_icon.png</image>
     <price>1,000</price>
     <shadow_size>Medium</shadow_size>
@@ -235,7 +235,7 @@
   </Record>
   <Record>
     <id>527</id>
-    <name>Spotted garden eel</name>
+    <name>spotted_garden_eel</name>
     <image>spotted_garden_eel_hhd_icon.png</image>
     <price>600</price>
     <shadow_size>Small</shadow_size>
@@ -244,7 +244,7 @@
   </Record>
   <Record>
     <id>528</id>
-    <name>Chambered nautilus</name>
+    <name>chambered_nautilus</name>
     <image>chambered_nautilus_hhd_icon.png</image>
     <price>900</price>
     <shadow_size>Medium</shadow_size>
@@ -253,7 +253,7 @@
   </Record>
   <Record>
     <id>529</id>
-    <name>Horseshoe crab</name>
+    <name>horseshoe_crab</name>
     <image>horseshoe_crab_hhd_icon.png</image>
     <price>1,500</price>
     <shadow_size>Medium</shadow_size>
@@ -262,7 +262,7 @@
   </Record>
   <Record>
     <id>530</id>
-    <name>Giant isopod</name>
+    <name>giant_isopod</name>
     <image>giant_isopod_hhd_icon.png</image>
     <price>9,000</price>
     <shadow_size>Medium</shadow_size>

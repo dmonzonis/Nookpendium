@@ -24,7 +24,10 @@ class FilterManager(internal var fragment: CritterFragment) {
     fun applyFilters(recordset: Recordset) {
         // Apply search filter separately
         // TODO: Search by price if the searchQuery is a number
-        recordset.applyFilter { it.name.contains(searchQuery, ignoreCase = true) }
+        recordset.applyFilter {
+            val nameString = activity.getString(it.name)
+            nameString.contains(searchQuery, ignoreCase = true)
+        }
 
         // Apply the currently active filters to the current state of the recordset
         for (filter in activeFilters) {
