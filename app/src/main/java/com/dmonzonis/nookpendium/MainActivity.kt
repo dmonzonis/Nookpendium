@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var sharedPrefs: SharedPreferences
     lateinit var filterManager: FilterManager
     lateinit var sortManager: SortManager
-
+    private lateinit var currentFragment: Fragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,13 +30,13 @@ class MainActivity : AppCompatActivity() {
 
         navGamesView.setNavigationItemSelectedListener(navListener())
 
-        val critterFragment = CritterFragment(sharedPrefs.getInt("selectedGame", R.string.game_acnh))
+        currentFragment = CritterFragment(sharedPrefs.getInt("selectedGame", R.string.game_acnh))
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, critterFragment)
+            .replace(R.id.fragment_container, currentFragment)
             .commit()
 
-        filterManager = FilterManager(critterFragment)
-        sortManager = SortManager(critterFragment)
+        filterManager = FilterManager(currentFragment as CritterFragment)
+        sortManager = SortManager(currentFragment as CritterFragment)
         setUpFilterManager()
         setUpSortManager()
 
@@ -51,26 +51,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun navListener() : NavigationView.OnNavigationItemSelectedListener {
         return NavigationView.OnNavigationItemSelectedListener {
-            var selectedFragment : Fragment? = null
-
             when (it.itemId) {
                 R.id.miGameAcnh -> {
-                    selectedFragment = CritterFragment(R.string.game_acnh)
+                    currentFragment = CritterFragment(R.string.game_acnh)
                     sharedPrefs.edit().putInt("selectedGame", R.string.game_acnh).apply()
                 }
                 R.id.miGameAcnl -> {
-                    selectedFragment = CritterFragment(R.string.game_acnl)
+                    currentFragment = CritterFragment(R.string.game_acnl)
                     sharedPrefs.edit().putInt("selectedGame", R.string.game_acnl).apply()
                 }
-                R.id.miAbout -> selectedFragment = AboutFragment()
-            }
-            if (selectedFragment != null) {
-                supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container, selectedFragment).commit()
-                if (selectedFragment is CritterFragment) {
-                    filterManager.fragment = selectedFragment
-                    sortManager.fragment = selectedFragment
+                R.id.miAbout -> {
+                    currentFragment = AboutFragment()
                 }
+            }
+            // Necessary for calling onCreateOptionsMenu again in case we change
+            // to a fragment that does not need filtering / search
+            invalidateOptionsMenu()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, currentFragment).commit()
+            if (currentFragment is CritterFragment) {
+                filterManager.fragment = currentFragment as CritterFragment
+                sortManager.fragment = currentFragment as CritterFragment
             }
             drawerLayout.closeDrawer(navGamesView)
             true
@@ -78,22 +79,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.toolbar_menu, menu)
-        // Set up search action
-        var searchMenuItem = menu?.findItem(R.id.miSearch)
-        val searchView = searchMenuItem?.actionView as SearchView
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                return false  // Do nothing, search is done on text change
-            }
+        if (currentFragment is CritterFragment) {
+            menuInflater.inflate(R.menu.toolbar_menu, menu)
+            // Set up search action
+            val searchMenuItem = menu?.findItem(R.id.miSearch)
+            val searchView = searchMenuItem?.actionView as SearchView
+            searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                override fun onQueryTextSubmit(query: String?): Boolean {
+                    return false  // Do nothing, search is done on text change
+                }
 
-            override fun onQueryTextChange(newText: String?): Boolean {
-                filterManager.searchQuery = newText ?: ""
-                filterManager.fragment.recomputeFilters()
-                return false
-            }
+                override fun onQueryTextChange(newText: String?): Boolean {
+                    filterManager.searchQuery = newText ?: ""
+                    filterManager.fragment.recomputeFilters()
+                    return false
+                }
 
-        })
+            })
+        }
         return super.onCreateOptionsMenu(menu)
     }
 
