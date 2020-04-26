@@ -125,7 +125,7 @@
     <image>nh_icon_snappingturtle.png</image>
     <price>5000</price>
     <location>river</location>
-    <shadow_size>4</shadow_size>
+    <shadow_size>5</shadow_size>
     <time>9pm - 4am</time>
     <availability>111100000111</availability>
   </Record>
@@ -185,7 +185,7 @@
     <image>nh_icon_giantsnakehead.png</image>
     <price>5500</price>
     <location>pond</location>
-    <shadow_size>4</shadow_size>
+    <shadow_size>5</shadow_size>
     <time>9am - 4pm</time>
     <availability>110000000001</availability>
   </Record>
@@ -264,17 +264,17 @@
     <name>cherry_salmon</name>
     <image>nh_icon_cherrysalmon.png</image>
     <price>1000</price>
-    <location>river_clifftop</location>
+    <location>river__clifftop_</location>
     <shadow_size>3</shadow_size>
     <time>4pm - 9am</time>
     <availability>001110001111</availability>
   </Record>
   <Record>
     <id>128</id>
-    <name>char_fish</name>
+    <name>_char</name>
     <image>nh_icon_char.png</image>
     <price>3800</price>
-    <location>river_clifftop_pond</location>
+    <location>river__clifftop__pond</location>
     <shadow_size>3</shadow_size>
     <time>4pm - 9am</time>
     <availability>001110001111</availability>
@@ -284,7 +284,7 @@
     <name>golden_trout</name>
     <image>nh_icon_goldentrout.png</image>
     <price>15000</price>
-    <location>river_clifftop</location>
+    <location>river__clifftop_</location>
     <shadow_size>3</shadow_size>
     <time>4pm - 9am</time>
     <availability>001110001110</availability>
@@ -294,7 +294,7 @@
     <name>stringfish</name>
     <image>nh_icon_stringfish.png</image>
     <price>15000</price>
-    <location>river_clifftop</location>
+    <location>river__clifftop_</location>
     <shadow_size>5</shadow_size>
     <time>4pm - 9am</time>
     <availability>000001111000</availability>
@@ -304,7 +304,7 @@
     <name>salmon</name>
     <image>nh_icon_salmon.png</image>
     <price>700</price>
-    <location>river_mouth</location>
+    <location>river__mouth_</location>
     <shadow_size>4</shadow_size>
     <time>All day</time>
     <availability>001000000000</availability>
@@ -314,7 +314,7 @@
     <name>king_salmon</name>
     <image>nh_icon_kingsalmon.png</image>
     <price>1800</price>
-    <location>river_mouth</location>
+    <location>river__mouth_</location>
     <shadow_size>6</shadow_size>
     <time>All day</time>
     <availability>001000000000</availability>
@@ -425,7 +425,7 @@
     <image>nh_icon_gar.png</image>
     <price>6000</price>
     <location>pond</location>
-    <shadow_size>5</shadow_size>
+    <shadow_size>6</shadow_size>
     <time>4pm - 9am</time>
     <availability>111000000001</availability>
   </Record>
@@ -454,7 +454,7 @@
     <name>sturgeon</name>
     <image>nh_icon_sturgeon.png</image>
     <price>10000</price>
-    <location>river_mouth</location>
+    <location>river__mouth_</location>
     <shadow_size>6</shadow_size>
     <time>All day</time>
     <availability>001111111000</availability>
@@ -536,7 +536,7 @@
     <price>5000</price>
     <location>sea</location>
     <shadow_size>3</shadow_size>
-    <time>6pm - 4am</time>
+    <time>9pm - 4am</time>
     <availability>000011110000</availability>
   </Record>
   <Record>
@@ -794,7 +794,7 @@
     <name>coelacanth</name>
     <image>nh_icon_coelacanth.png</image>
     <price>15000</price>
-    <location>while_raining</location>
+    <location>sea__raining_</location>
     <shadow_size>6</shadow_size>
     <time>All day</time>
     <availability>111111111111</availability>

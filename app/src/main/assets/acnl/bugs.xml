@@ -22,7 +22,7 @@
     <name>tiger_butterfly</name>
     <image>tiger_butterfly_hhd_icon.png</image>
     <price>160</price>
-    <location>*</location>
+    <location>_</location>
     <time>8 AM - 7 PM</time>
     <availability>001111111000</availability>
   </Record>
@@ -31,7 +31,7 @@
     <name>peacock_butterfly</name>
     <image>peacock_butterfly_hhd_icon.png</image>
     <price>220</price>
-    <location>*</location>
+    <location>_</location>
     <time>4 AM - 7 PM</time>
     <availability>001111111000</availability>
   </Record>
@@ -48,7 +48,7 @@
     <id>406</id>
     <name>emperor_butterfly</name>
     <image>emperor_butterfly_hhd_icon.png</image>
-    <price>2,500</price>
+    <price>2500</price>
     <location>flying_near_flowers</location>
     <time>8 PM - 7 AM</time>
     <availability>000001111000</availability>
@@ -57,7 +57,7 @@
     <id>407</id>
     <name>agrias_butterfly</name>
     <image>agrias_butterfly_hhd_icon.png</image>
-    <price>3,000</price>
+    <price>3000</price>
     <location>flying_near_flowers</location>
     <time>8 AM - 5 PM</time>
     <availability>000001111000</availability>
@@ -66,7 +66,7 @@
     <id>408</id>
     <name>raja_brooke_butterfly</name>
     <image>raja_brooke_hhd_icon.png</image>
-    <price>2,500</price>
+    <price>2500</price>
     <location>flying_near_river</location>
     <time>8 AM - 5 PM</time>
     <availability>000011111000</availability>
@@ -75,7 +75,7 @@
     <id>409</id>
     <name>birdwing_butterfly</name>
     <image>birdwing_hhd_icon.png</image>
-    <price>4,000</price>
+    <price>4000</price>
     <location>flying_near_flowers</location>
     <time>8 AM - 4 PM</time>
     <availability>000001111000</availability>
@@ -93,7 +93,7 @@
     <id>411</id>
     <name>oak_silk_moth</name>
     <image>oak_silk_moth_hhd_icon.png</image>
-    <price>1,200</price>
+    <price>1200</price>
     <location>on_trees</location>
     <time>7 PM - 4 AM</time>
     <availability>000001111000</availability>
@@ -111,7 +111,7 @@
     <id>413</id>
     <name>bee</name>
     <image>bee_hhd_icon.png</image>
-    <price>2,500</price>
+    <price>2500</price>
     <location>in_trees</location>
     <time>All day</time>
     <availability>111111111111</availability>
@@ -156,7 +156,7 @@
     <id>418</id>
     <name>orchid_mantis</name>
     <image>orchid_mantis_hhd_icon.png</image>
-    <price>2,400</price>
+    <price>2400</price>
     <location>on_white_flowers</location>
     <time>8 AM - 5 PM</time>
     <availability>000111111110</availability>
@@ -219,7 +219,7 @@
     <id>425</id>
     <name>lantern_fly</name>
     <image>lantern_fly_hhd_icon.png</image>
-    <price>1,800</price>
+    <price>1800</price>
     <location>on_trees</location>
     <time>4 PM - 8 AM</time>
     <availability>000001111000</availability>
@@ -246,7 +246,7 @@
     <id>428</id>
     <name>banded_dragonfly</name>
     <image>banded_dragonfly_hhd_icon.png</image>
-    <price>4,500</price>
+    <price>4500</price>
     <location>flying</location>
     <time>8 AM - 5 PM</time>
     <availability>000000110000</availability>
@@ -255,7 +255,7 @@
     <id>429</id>
     <name>petaltail_dragonfly</name>
     <image>petaltail_dragonfly_hhd_icon.png</image>
-    <price>8,000</price>
+    <price>8000</price>
     <location>flying</location>
     <time>5 PM - 7 PM</time>
     <availability>000000011100</availability>
@@ -301,7 +301,7 @@
     <name>snail</name>
     <image>snail_hhd_icon.png</image>
     <price>250</price>
-    <location>rain</location>
+    <location>_rain_</location>
     <time>All day</time>
     <availability>000111111000</availability>
   </Record>
@@ -399,7 +399,7 @@
     <id>445</id>
     <name>tiger_beetle</name>
     <image>tiger_beetle_hhd_icon.png</image>
-    <price>1,500</price>
+    <price>1500</price>
     <location>on_the_ground</location>
     <time>8 AM - 11 PM</time>
     <availability>001111111100</availability>
@@ -426,7 +426,7 @@
     <id>448</id>
     <name>hermit_crab</name>
     <image>hermit_crab_hhd_icon.png</image>
-    <price>1,000</price>
+    <price>1000</price>
     <location>on_the_beach</location>
     <time>7 PM - 8 AM</time>
     <availability>111111111111</availability>
@@ -453,7 +453,7 @@
     <id>451</id>
     <name>scarab_beetle</name>
     <image>scarab_beetle_hhd_icon.png</image>
-    <price>6,000</price>
+    <price>6000</price>
     <location>on_trees</location>
     <time>11 PM - 8 AM</time>
     <availability>000000110000</availability>
@@ -462,7 +462,7 @@
     <id>452</id>
     <name>jewel_beetle</name>
     <image>jewel_beetle_hhd_icon.png</image>
-    <price>2,400</price>
+    <price>2400</price>
     <location>on_trees</location>
     <time>8 AM - 5 PM</time>
     <availability>000000110000</availability>
@@ -471,7 +471,7 @@
     <id>453</id>
     <name>miyama_stag</name>
     <image>miyama_stag_hhd_icon.png</image>
-    <price>1,000</price>
+    <price>1000</price>
     <location>on_trees</location>
     <time>All day</time>
     <availability>000000110000</availability>
@@ -480,7 +480,7 @@
     <id>454</id>
     <name>saw_stag</name>
     <image>saw_stag_hhd_icon.png</image>
-    <price>2,000</price>
+    <price>2000</price>
     <location>on_trees</location>
     <time>All day</time>
     <availability>000000110000</availability>
@@ -489,7 +489,7 @@
     <id>455</id>
     <name>giant_stag</name>
     <image>giant_stag_hhd_icon.png</image>
-    <price>10,000</price>
+    <price>10000</price>
     <location>on_trees</location>
     <time>11 PM - 8 AM</time>
     <availability>000000110000</availability>
@@ -498,7 +498,7 @@
     <id>456</id>
     <name>rainbow_stag</name>
     <image>rainbow_stag_hhd_icon.png</image>
-    <price>10,000</price>
+    <price>10000</price>
     <location>on_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001111000</availability>
@@ -507,7 +507,7 @@
     <id>457</id>
     <name>cyclommatus_stag</name>
     <image>cyclommatus_hhd_icon.png</image>
-    <price>8,000</price>
+    <price>8000</price>
     <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
@@ -516,7 +516,7 @@
     <id>458</id>
     <name>golden_stag</name>
     <image>golden_stag_hhd_icon.png</image>
-    <price>12,000</price>
+    <price>12000</price>
     <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
@@ -525,7 +525,7 @@
     <id>459</id>
     <name>horned_dynastid</name>
     <image>horned_dynastid_hhd_icon.png</image>
-    <price>1,350</price>
+    <price>1350</price>
     <location>on_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
@@ -534,7 +534,7 @@
     <id>460</id>
     <name>horned_atlas</name>
     <image>horned_atlas_hhd_icon.png</image>
-    <price>8,000</price>
+    <price>8000</price>
     <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
@@ -543,7 +543,7 @@
     <id>461</id>
     <name>horned_elephant</name>
     <image>horned_elephant_hhd_icon.png</image>
-    <price>8,000</price>
+    <price>8000</price>
     <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
@@ -552,7 +552,7 @@
     <id>462</id>
     <name>horned_hercules</name>
     <image>horned_hercules_hhd_icon.png</image>
-    <price>12,000</price>
+    <price>12000</price>
     <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001110000</availability>
@@ -561,7 +561,7 @@
     <id>463</id>
     <name>goliath_beetle</name>
     <image>goliath_beetle_hhd_icon.png</image>
-    <price>6,000</price>
+    <price>6000</price>
     <location>on_palm_trees</location>
     <time>5 PM - 8 AM</time>
     <availability>000001111000</availability>
@@ -633,7 +633,7 @@
     <id>471</id>
     <name>tarantula</name>
     <image>tarantula_hhd_icon.png</image>
-    <price>8,000</price>
+    <price>8000</price>
     <location>on_the_ground</location>
     <time>7 PM - 4 AM</time>
     <availability>000001110000</availability>
@@ -642,9 +642,17 @@
     <id>472</id>
     <name>scorpion</name>
     <image>scorpion_hhd_icon.png</image>
-    <price>8,000</price>
+    <price>8000</price>
     <location>on_the_ground</location>
     <time>7 PM - 4 AM</time>
     <availability>000000111000</availability>
+  </Record>
+  <Record>
+    <id>473</id>
+    <name></name>
+  </Record>
+  <Record>
+    <id>474</id>
+    <name>_</name>
   </Record>
 </RecordList>

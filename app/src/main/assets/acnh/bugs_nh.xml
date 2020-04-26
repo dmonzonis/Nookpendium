@@ -91,7 +91,7 @@
   </Record>
   <Record>
     <id>211</id>
-    <name>rajah_brookes_birdwing</name>
+    <name>rajah_brooke_s_birdwing</name>
     <image>nh_icon_rajahbrookesbirdwing.png</image>
     <price>2500</price>
     <location>flying</location>
@@ -100,7 +100,7 @@
   </Record>
   <Record>
     <id>212</id>
-    <name>queen_alexandras_birdwing</name>
+    <name>queen_alexandra_s_birdwing</name>
     <image>nh_icon_queenalexandrasbirdwing.png</image>
     <price>4000</price>
     <location>flying</location>
@@ -202,7 +202,7 @@
     <name>orchid_mantis</name>
     <image>nh_icon_orchidmantis.png</image>
     <price>2400</price>
-    <location>on_flowers_white</location>
+    <location>on_flowers__white_</location>
     <time>8 AM - 5 PM</time>
     <availability>001111111110</availability>
   </Record>
@@ -436,7 +436,7 @@
     <name>blue_weevil_beetle</name>
     <image>nh_icon_blueweevilbeetle.png</image>
     <price>800</price>
-    <location>on_trees_coconut?</location>
+    <location>on_trees__coconut__</location>
     <time>All day</time>
     <availability>000000110000</availability>
   </Record>
@@ -445,7 +445,7 @@
     <name>dung_beetle</name>
     <image>nh_icon_dungbeetle.png</image>
     <price>3000</price>
-    <location>on_the_ground_rolling_snowballs</location>
+    <location>on_the_ground__rolling_snowballs_</location>
     <time>All day</time>
     <availability>110000000001</availability>
   </Record>
@@ -481,7 +481,7 @@
     <name>goliath_beetle</name>
     <image>nh_icon_goliathbeetle.png</image>
     <price>8000</price>
-    <location>on_trees_coconut</location>
+    <location>on_trees__coconut_</location>
     <time>5 PM - 8 AM</time>
     <availability>000001111000</availability>
   </Record>
@@ -526,7 +526,7 @@
     <name>cyclommatus_stag</name>
     <image>nh_icon_cyclommatusstag.png</image>
     <price>8000</price>
-    <location>on_trees_coconut</location>
+    <location>on_trees__coconut_</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
@@ -535,7 +535,7 @@
     <name>golden_stag</name>
     <image>nh_icon_goldenstag.png</image>
     <price>12000</price>
-    <location>on_trees_coconut</location>
+    <location>on_trees__coconut_</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
@@ -544,7 +544,7 @@
     <name>giraffe_stag</name>
     <image>nh_icon_giraffestag.png</image>
     <price>12000</price>
-    <location>on_trees_coconut?</location>
+    <location>on_trees__coconut__</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
@@ -562,7 +562,7 @@
     <name>horned_atlas</name>
     <image>nh_icon_hornedatlas.png</image>
     <price>8000</price>
-    <location>on_trees_coconut</location>
+    <location>on_trees__coconut_</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
@@ -571,7 +571,7 @@
     <name>horned_elephant</name>
     <image>nh_icon_hornedelephant.png</image>
     <price>8000</price>
-    <location>on_trees_coconut</location>
+    <location>on_trees__coconut_</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
@@ -580,7 +580,7 @@
     <name>horned_hercules</name>
     <image>nh_icon_hornedhercules.png</image>
     <price>12000</price>
-    <location>on_trees_coconut</location>
+    <location>on_trees__coconut_</location>
     <time>5 PM - 8 AM</time>
     <availability>000000110000</availability>
   </Record>
@@ -661,7 +661,7 @@
     <name>flea</name>
     <image>nh_icon_flea.png</image>
     <price>70</price>
-    <location>villagers_heads</location>
+    <location>villager_s_heads</location>
     <time>All day</time>
     <availability>000111111110</availability>
   </Record>
@@ -670,7 +670,7 @@
     <name>snail</name>
     <image>nh_icon_snail.png</image>
     <price>250</price>
-    <location>on_rocks_rain</location>
+    <location>on_rocks_and_bushes__rain_</location>
     <time>All day</time>
     <availability>111111111111</availability>
   </Record>
