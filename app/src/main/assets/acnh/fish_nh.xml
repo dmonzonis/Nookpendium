@@ -271,7 +271,7 @@
   </Record>
   <Record>
     <id>128</id>
-    <name>char</name>
+    <name>char_fish</name>
     <image>nh_icon_char.png</image>
     <price>3800</price>
     <location>river_clifftop_pond</location>
