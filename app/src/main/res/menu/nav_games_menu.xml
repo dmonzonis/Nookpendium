@@ -3,10 +3,30 @@
     <group android:id="@+id/gamesGroup">
         <item
             android:id="@+id/miGameAcnh"
-            android:title="@string/game_acnh"/>
+            android:title="@string/game_acnh"
+            android:orderInCategory="1">
+            <menu>
+                <item
+                    android:id="@+id/miAcnhCritters"
+                    android:title="@string/critters"/>
+                <item
+                    android:id="@+id/miAcnhFossils"
+                    android:title="@string/fossils"/>
+            </menu>
+        </item>
         <item
             android:id="@+id/miGameAcnl"
-            android:title="@string/game_acnl"/>
+            android:title="@string/game_acnl"
+            android:orderInCategory="2">
+            <menu>
+                <item
+                    android:id="@+id/miAcnlCritters"
+                    android:title="@string/critters"/>
+                <item
+                    android:id="@+id/miAcnlFossils"
+                    android:title="@string/fossils"/>
+            </menu>
+        </item>
     </group>
     <group android:id="@+id/metaGroup">
         <item

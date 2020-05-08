@@ -57,6 +57,7 @@
                 android:gravity="start"/>
 
             <ImageView
+                android:id="@+id/image_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_access_time_black_24dp"
@@ -72,6 +73,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/location_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"

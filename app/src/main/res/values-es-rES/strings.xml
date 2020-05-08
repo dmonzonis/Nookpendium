@@ -73,4 +73,6 @@
     <string name="unknown">Desconocido</string>
     <string name="rain_or_snow">Lluvia o nieve</string>
     <string name="while_raining">Mientras llueve</string>
+    <string name="critters">Bichos</string>
+    <string name="fossils">Fósiles</string>
 </resources>

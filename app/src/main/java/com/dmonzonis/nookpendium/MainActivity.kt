@@ -52,12 +52,20 @@ class MainActivity : AppCompatActivity() {
     private fun navListener() : NavigationView.OnNavigationItemSelectedListener {
         return NavigationView.OnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.miGameAcnh -> {
+                R.id.miAcnhCritters -> {
                     currentFragment = CritterFragment(R.string.game_acnh)
                     sharedPrefs.edit().putInt("selectedGame", R.string.game_acnh).apply()
                 }
-                R.id.miGameAcnl -> {
+                R.id.miAcnhFossils -> {
+                    currentFragment = FossilFragment(R.string.game_acnh)
+                    sharedPrefs.edit().putInt("selectedGame", R.string.game_acnh).apply()
+                }
+                R.id.miAcnlCritters -> {
                     currentFragment = CritterFragment(R.string.game_acnl)
+                    sharedPrefs.edit().putInt("selectedGame", R.string.game_acnl).apply()
+                }
+                R.id.miAcnlFossils -> {
+                    currentFragment = FossilFragment(R.string.game_acnl)
                     sharedPrefs.edit().putInt("selectedGame", R.string.game_acnl).apply()
                 }
                 R.id.miAbout -> {

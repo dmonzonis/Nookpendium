@@ -91,7 +91,7 @@
   </Record>
   <Record>
     <id>211</id>
-    <name>rajah_brookes_birdwing</name>
+    <name>rajah_brooke_s_birdwing</name>
     <image>nh_icon_rajahbrookesbirdwing.png</image>
     <price>2500</price>
     <location>flying</location>
@@ -100,7 +100,7 @@
   </Record>
   <Record>
     <id>212</id>
-    <name>queen_alexandras_birdwing</name>
+    <name>queen_alexandra_s_birdwing</name>
     <image>nh_icon_queenalexandrasbirdwing.png</image>
     <price>4000</price>
     <location>flying</location>
@@ -670,7 +670,7 @@
     <name>snail</name>
     <image>nh_icon_snail.png</image>
     <price>250</price>
-    <location>on_rocks_during_rain</location>
+    <location>on_rocks_and_bushes__rain_</location>
     <time>All day</time>
     <availability>111111111111</availability>
   </Record>

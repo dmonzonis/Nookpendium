@@ -84,7 +84,7 @@
     <id>510</id>
     <name>pearl_oyster</name>
     <image>pearl_oyster_hhd_icon.png</image>
-    <price>1,600</price>
+    <price>1600</price>
     <shadow_size>Small</shadow_size>
     <time>All day</time>
     <availability>111111111111</availability>
@@ -93,7 +93,7 @@
     <id>511</id>
     <name>scallop</name>
     <image>scallop_hhd_icon.png</image>
-    <price>1,000</price>
+    <price>1000</price>
     <shadow_size>Medium</shadow_size>
     <time>All day</time>
     <availability>111111111111</availability>
@@ -147,7 +147,7 @@
     <id>517</id>
     <name>mantis_shrimp</name>
     <image>mantis_shrimp_hhd_icon.png</image>
-    <price>1,250</price>
+    <price>1250</price>
     <shadow_size>Small</shadow_size>
     <time>4 PM - 9 AM</time>
     <availability>111111111111</availability>
@@ -165,7 +165,7 @@
     <id>519</id>
     <name>tiger_prawn</name>
     <image>tiger_prawn_hhd_icon.png</image>
-    <price>1,600</price>
+    <price>1600</price>
     <shadow_size>Small</shadow_size>
     <time>4 PM - 9 AM</time>
     <availability>000001111000</availability>
@@ -174,7 +174,7 @@
     <id>520</id>
     <name>spiny_lobster</name>
     <image>spiny_lobster_hhd_icon.png</image>
-    <price>3,000</price>
+    <price>3000</price>
     <shadow_size>Large</shadow_size>
     <time>9 PM - 4 AM</time>
     <availability>000000001111</availability>
@@ -183,7 +183,7 @@
     <id>521</id>
     <name>lobster</name>
     <image>lobster_hhd_icon.png</image>
-    <price>2,500</price>
+    <price>2500</price>
     <shadow_size>Large</shadow_size>
     <time>All day</time>
     <availability>111111111111</availability>
@@ -192,7 +192,7 @@
     <id>522</id>
     <name>snow_crab</name>
     <image>snow_crab_hhd_icon.png</image>
-    <price>4,000</price>
+    <price>4000</price>
     <shadow_size>Large</shadow_size>
     <time>All day</time>
     <availability>111100000011</availability>
@@ -201,7 +201,7 @@
     <id>523</id>
     <name>horsehair_crab</name>
     <image>horsehair_crab_hhd_icon.png</image>
-    <price>4,000</price>
+    <price>4000</price>
     <shadow_size>Medium</shadow_size>
     <time>All day</time>
     <availability>111100000011</availability>
@@ -210,7 +210,7 @@
     <id>524</id>
     <name>red_king_crab</name>
     <image>red_king_crab_hhd_icon.png</image>
-    <price>6,000</price>
+    <price>6000</price>
     <shadow_size>Large</shadow_size>
     <time>All day</time>
     <availability>111000000011</availability>
@@ -219,7 +219,7 @@
     <id>525</id>
     <name>spider_crab</name>
     <image>spider_crab_hhd_icon.png</image>
-    <price>10,000</price>
+    <price>10000</price>
     <shadow_size>Huge</shadow_size>
     <time>All day</time>
     <availability>001100000000</availability>
@@ -228,7 +228,7 @@
     <id>526</id>
     <name>octopus</name>
     <image>octopus_hhd_icon.png</image>
-    <price>1,000</price>
+    <price>1000</price>
     <shadow_size>Medium</shadow_size>
     <time>All day</time>
     <availability>101111101111</availability>
@@ -255,7 +255,7 @@
     <id>529</id>
     <name>horseshoe_crab</name>
     <image>horseshoe_crab_hhd_icon.png</image>
-    <price>1,500</price>
+    <price>1500</price>
     <shadow_size>Medium</shadow_size>
     <time>9 PM - 4 AM</time>
     <availability>000000111000</availability>
@@ -264,7 +264,7 @@
     <id>530</id>
     <name>giant_isopod</name>
     <image>giant_isopod_hhd_icon.png</image>
-    <price>9,000</price>
+    <price>9000</price>
     <shadow_size>Medium</shadow_size>
     <time>All day</time>
     <availability>111111111111</availability>
